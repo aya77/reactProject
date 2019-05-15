@@ -19,7 +19,6 @@ class Symbole extends Component {
                 <div className="raw">
                     <div className="col-4">
                         <Navbar bg="secondary" variant="light">
-                            <NavbarBrand href="#home">Navbar</NavbarBrand>
                             <Nav className="mr-auto">
                                 <NavLink href="#home">
                                     <FontAwesomeIcon icon={faSearch} />
