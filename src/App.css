@@ -31,3 +31,13 @@
     transform: rotate(360deg);
   }
 }
+
+.product{
+  margin-left: 1%;
+  float: left;
+  width: 15%;
+}
+.allProducts{
+  width:50%;
+}
+a { cursor: pointer; }
