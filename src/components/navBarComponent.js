@@ -15,8 +15,7 @@ class Symbole extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className="raw">
+           
                     <div className="col-4">
                         <Navbar bg="secondary" variant="light">
                             <Nav className="mr-auto">
@@ -38,8 +37,8 @@ class Symbole extends Component {
                             </Nav>
                         </Navbar>
                     </div>
-                </div>
-            </div>
+             
+           
         );
 
     }

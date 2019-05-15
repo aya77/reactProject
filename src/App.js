@@ -1,17 +1,28 @@
 import React,{Component} from 'react';
 
-import Symbole from './components/symbolsComponent'
+import Symbole from './components/navBarComponent'
 import Glasses from './components/Glasses'
-
+import Products from './components/forthPart/productsComponent'
+import {PRODUCTS} from './shared/products'
 class App extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      products: PRODUCTS,
+    }
+  }
   render(){
     return (
       <div className="App">
-        
-      
+         <div className="row">
+         
           <Symbole/>
           <Glasses />
-      
+              
+         
+         
+             <Products products= {this.state.products}/>
+          </div>
       </div>
     );
   }
