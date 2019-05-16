@@ -4,6 +4,7 @@ import Symbole from './components/navBarComponent'
 import Glasses from './components/Glasses'
 import Products from './components/forthPart/productsComponent'
 import {PRODUCTS} from './shared/products'
+import Intro from './components/Intro'
 class App extends Component{
   constructor(props){
     super(props);
@@ -14,15 +15,25 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-         <div className="row m-1">
+         <div className="row m-1 ">
          
           <Symbole/>
-          <Glasses />
-              
-         
-         
-             <Products products= {this.state.products}/>
+        
           </div>
+
+          <div className="row m-1 ">
+          <div class="col-4">
+               <Intro /> 
+          </div>   
+          <div class="col-8">  
+               <Glasses />
+          </div>     
+               
+          </div>
+
+           <div className="row m-1 ">    
+                  <Products products= {this.state.products}/>
+            </div>      
       </div>
     );
   }
