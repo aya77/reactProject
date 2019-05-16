@@ -5,6 +5,7 @@ import Glasses from './components/Glasses'
 import Products from './components/forthPart/productsComponent'
 import {PRODUCTS} from './shared/products'
 import Intro from './components/Intro'
+import sunG from "./images/sunG.jpeg";
 class App extends Component{
   constructor(props){
     super(props);
@@ -22,10 +23,13 @@ class App extends Component{
           </div>
 
           <div className="row m-1 ">
-          <div class="col-4">
+          <div className="col-4 ">
                <Intro /> 
           </div>   
-          <div class="col-8">  
+          <div className="col-4">  
+          <img src={sunG}  width="400px" height="450px" />
+          </div>   
+          <div className="col-4">  
                <Glasses />
           </div>     
                
