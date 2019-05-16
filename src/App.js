@@ -14,7 +14,7 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-         <div className="row">
+         <div className="row m-1">
          
           <Symbole/>
           <Glasses />

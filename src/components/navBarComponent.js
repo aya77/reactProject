@@ -16,9 +16,9 @@ class Symbole extends Component {
     render() {
         return (
            
-                    <div className="col-4">
+                    <div className="col-4 ml-auto ">
                         <Navbar bg="secondary" variant="light">
-                            <Nav className="mr-auto">
+                            <Nav className=" mx-auto"> 
                                 <NavLink href="#home">
                                     <FontAwesomeIcon icon={faSearch} />
                                 </NavLink>
