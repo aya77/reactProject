@@ -62,3 +62,33 @@ a { cursor: pointer; }
 .blog .carousel-indicators .active {
 background: #707070;
 }
+@font-face {
+  font-family: 'Anton';
+  src: local('Anton Regular'), url('./fonts/Anton/Anton-Regular.ttf') format('truetype');
+}
+
+
+.intro-title {
+  font-family: 'Anton';
+  font-size: 70px ;
+}
+
+.intro-body {
+  
+  font-size: 25px ;
+}
+#black {
+  font-family: 'Anton';
+  font-size: 25px ;
+}
+.color {
+  font-family: 'Anton';
+  font-size: 30px ;
+  color: #F84B4B ;
+}
+
+.intro-title-color{
+  font-family: 'Anton';
+  font-size: 70px ;
+  color: #F84B4B ;
+}
