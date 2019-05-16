@@ -57,3 +57,18 @@ a { cursor: pointer; }
   
   font-size: 25px ;
 }
+#black {
+  font-family: 'Anton';
+  font-size: 25px ;
+}
+.color {
+  font-family: 'Anton';
+  font-size: 30px ;
+  color: #F84B4B ;
+}
+
+.intro-title-color{
+  font-family: 'Anton';
+  font-size: 70px ;
+  color: #F84B4B ;
+}

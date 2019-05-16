@@ -17,6 +17,12 @@ class App extends Component{
     return (
       <div className="App">
          <div className="row m-1 ">
+         <div className="m-3">
+           <span id = "black">Happy  </span>
+           <span className= "color">V</span>
+           <span id = "black">ision</span>
+
+         </div>  
          
           <Symbole/>
         
@@ -26,10 +32,10 @@ class App extends Component{
           <div className="col-4 ">
                <Intro /> 
           </div>   
-          <div className="col-4">  
-          <img src={sunG}  width="400px" height="450px" />
+          <div className="col-3">  
+          <img src="https://i.pinimg.com/564x/e9/00/0d/e9000dab632f80af73a0818c6baf1b94.jpg" width="350px" height="400px" />
           </div>   
-          <div className="col-4">  
+          <div className="col-5">  
                <Glasses />
           </div>     
                

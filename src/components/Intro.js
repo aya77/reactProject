@@ -6,7 +6,11 @@ class Intro extends Component {
             <div>
         
             <div className="intro-title">
-                Welcom to happy vision the eye wear
+                Welcom to 
+                <p className= " intro-title-color " >
+                happy vision 
+                </p>
+                the eye wear
 
             </div>  
             <div  className="intro-body">
