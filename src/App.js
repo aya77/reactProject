@@ -6,6 +6,8 @@ import Products from './components/forthPart/productsComponent'
 import {PRODUCTS} from './shared/products'
 import Intro from './components/Intro'
 import sunG from "./images/sunG.jpeg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel, faSearch,faUser,  faShoppingBag, faAlignJustify  } from '@fortawesome/free-solid-svg-icons'
 class App extends Component{
   constructor(props){
     super(props);
@@ -17,13 +19,20 @@ class App extends Component{
     return (
       <div className="App">
          <div className="row m-1 ">
-         <div className="m-3">
+       
+         <div className=" col-3 m-3">
+
            <span id = "black">Happy  </span>
            <span className= "color">V</span>
            <span id = "black">ision</span>
-
-         </div>  
+      
          
+      
+        
+         </div>  
+         <div  className =" col-1 mt-4" >
+         <FontAwesomeIcon icon={faAlignJustify} />
+           </div>
           <Symbole/>
         
           </div>
