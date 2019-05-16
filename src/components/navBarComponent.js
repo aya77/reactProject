@@ -3,11 +3,9 @@ import React, { Component } from 'react';
 
 import { Navbar, NavbarBrand, Nav,NavLink } from 'reactstrap';
 // fontAwsome
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel, faSearch,faUser,  faShoppingBag, faMapMarker  } from '@fortawesome/free-solid-svg-icons'
+import { faSearch,faUser,  faShoppingBag, faMapMarker  } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faStroopwafel)
 // end of font awsome
 
 class Symbole extends Component {
