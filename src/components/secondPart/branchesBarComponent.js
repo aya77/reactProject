@@ -8,13 +8,13 @@ class BranchesBarComponent extends Component{
 
       return (
         <div className ="row branchesBar ">
-          <div className=" col-6 text-left pt-4 pl-5" >
-          Select a  branch to jump into
+          <div className=" col-9 text-left pt-4 pl-5" >
+          <strong >Select a  branch to jump into</strong>
           </div>
-          <div  className=" col-6 text-right pt-4 pr-5" >
-          <span>all branches
+          <div  className=" col-3 text-left pt-4 pr-5" >
+          <span> <strong >all branches
           <FontAwesomeIcon icon={faChevronDown} />
-
+          </strong>
           </span>
          </div>
           </div>
