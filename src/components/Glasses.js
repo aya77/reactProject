@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../images/sunglasses_PNG150.png";
+import {GLASSESPRODUCT} from '../shared/products'
 import "../App.css";
 import Pagination from "./Pagination";
 import {
@@ -10,63 +10,10 @@ class Glasses extends Component {
   constructor() {
     super();
 
-   var exampleItems = [
-      { id: 1, image: logo, description: "Round Folding", price: 99.99 },
-      { id: 2, image: logo, description: "Round Folding", price: 99.99 },
-      {
-        id: 3,
-        image: logo,
-        description: "Round Folding",
-        price: 80.5
-      },
-      {
-        id: 4,
-        image: logo,
-        description: "Round Folding",
-        price: 40.2
-      },
-      {
-        id: 5,
-        image: logo,
-        description: "Round Folding",
-        price: 80.5
-      },
-      {
-        id: 6,
-        image: logo,
-        description: "Round Folding",
-        price: 40.2
-      },
-      { id: 7, image: logo, description: "Round Folding", price: 99.99 },
-      {
-        id: 8,
-        image: logo,
-        description: "Round Folding",
-        price: 80.5
-      },
-      {
-        id: 9,
-        image: logo,
-        description: "Round Folding",
-        price: 40.2
-      },
-      {
-        id: 10,
-        image: logo,
-        description: "Round Folding",
-        price: 40.2
-      },
-      {
-        id: 11,
-        image: logo,
-        description: "Round Folding",
-        price: 40.2
-      }
-    ];
-
     this.state = {
-      exampleItems: exampleItems,
-      pageOfItems: []
+      exampleItems: GLASSESPRODUCT,
+      pageOfItems: [],
+      currentGlass: GLASSESPRODUCT[0]
     };
 
     this.onChangePage = this.onChangePage.bind(this);
@@ -79,15 +26,31 @@ class Glasses extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
-       
+        <div className="row justify-content-center">
+          <div className="col-6">
+            <img
+              src={this.state.currentGlass.image}
+              alt="logo"
+              width="200px"
+              height="100px"
+            />
+            <div key={this.state.currentGlass.id}>
+              {this.state.currentGlass.description}
+            </div>
+            <div>{this.state.currentGlass.price}</div>
+          </div>
+        </div>
+        <div className="row m-2">
           {this.state.pageOfItems.map(item => (
-            <div className="col-6">
-       
-              <img src={item.image} alt="logo" width="200px" height="100px" />
-              <div key={item.id}>{item.description}</div>
-              <div>{item.price}</div>
-           
+            <div className="col-5 m-2 p-2">
+              <img
+              className="productImage"
+                width={170}
+                height={80}
+                onClick={() => this.setState({ currentGlass: item })}
+                src={item.image}
+                alt="logo"
+              />
             </div>
           ))}
           <Pagination
@@ -96,10 +59,9 @@ class Glasses extends Component {
             leftIcon={faChevronLeft}
             centerButton={1}
             rightIcon={faChevronRight}
-            itemsPerPage = {2}
+            itemsPerPage={4}
           />
         </div>
-       
       </div>
     );
   }

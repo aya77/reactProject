@@ -2,10 +2,7 @@ import React from "react";
 import "../App.css";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faChevronLeft,
-    faChevronRight
-  } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
 const propTypes = {
   items: PropTypes.array.isRequired,
@@ -119,30 +116,35 @@ export default class Pagination extends React.Component {
     }
 
     return (
-      <div className=" d-flex justify-content-center ">
+      <div className="row d-flex justify-content-center mt-5 ">
         <ul className="row pagination  ml-5">
-          <li className= {pager.currentPage === 1 ? "col-2 disabled" : "col-2"}>
+          <li className={pager.currentPage === 1 ? "col-2 disabled" : "col-2"}>
             <a onClick={() => this.setPage(pager.currentPage - 1)}>
-              <FontAwesomeIcon icon={this.props.leftIcon} />
+              <div className={this.props.centerButton === 1 ? "leftArrow" : ""}>
+                <FontAwesomeIcon icon={this.props.leftIcon} />
+              </div>
             </a>
           </li>
-          {this.props.centerButton === 1 ? 
-            <li className="col-8">
-            <input
-              type="button"
-              className="btn btn-danger"
-              value="ADD To CHART"
-            />
-          </li>
-          :<div className=""></div>
-         
-          }
-        
+          {this.props.centerButton === 1 ? (
+            <li  className="addBtn col-8">
+              <FontAwesomeIcon className="ml-3" color="red" icon={faShoppingBag} />
+                ADD To CHART
+            </li>
+          ) : (
+            <div className="Btn" />
+          )}
+
           <li
-            className={pager.currentPage === pager.totalPages ? "disabled col-2" : "col-2"}
+            className={
+              pager.currentPage === pager.totalPages
+                ? "disabled col-2"
+                : "col-2"
+            }
           >
             <a onClick={() => this.setPage(pager.currentPage + 1)}>
-              <FontAwesomeIcon icon={this.props.rightIcon} />
+              <div className={this.props.centerButton === 1 ? "rightArrow" : ""}>
+                <FontAwesomeIcon icon={this.props.rightIcon} />
+              </div>
             </a>
           </li>
         </ul>
