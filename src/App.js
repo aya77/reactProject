@@ -22,7 +22,7 @@ import {
 
 import TypeComponent  from "./components/secondPart/typesComponent";
 import TrendsComponent from "./components/secondPart/trendsComponent"
-import BranchesBar from './components/branchesBarComponant'
+import BranchesBarComponent from './components/secondPart/branchesBarComponent'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -60,6 +60,9 @@ class App extends Component {
             <Glasses />
           </div>
         </div>
+        <div className= "col-12">
+        <BranchesBarComponent/>
+          </div>
         <div className="row">
             <TypeComponent />
           </div>
@@ -76,7 +79,7 @@ class App extends Component {
             <FollowComponent />
           </div>
 
-          <div className="row m-1 ">
+          <div className="row m-1 " name ="foo" >
             <ContactsComponent />
           </div>
         </div>

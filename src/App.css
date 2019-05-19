@@ -95,6 +95,7 @@ background: #707070;
 
 .branchesBar{
   color :white ;
-  background-color: black
+  background-color: black ;
+  height: 80px
 
 }
