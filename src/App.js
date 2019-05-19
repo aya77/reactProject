@@ -9,6 +9,8 @@ import BrandsComponent from "./components/fifthPart/brandsComponent";
 import FollowComponent from "./components/sixthPart/followComponent";
 import ContactsComponent from "./components/seventhPart/contactsComponent";
 
+import SeperationComponent from './components/thirdPart/seperationComponent'
+
 import Intro from "./components/Intro";
 import sunG from "./images/sunG.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -59,13 +61,15 @@ class App extends Component {
             <Glasses />
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-5">
             <TypeComponent />
           </div>
-          <div className="row">
+          <div className="row mt-5">
             <TrendsComponent />
           </div>
-
+          <div className="row bg-dark">
+            <SeperationComponent/>
+          </div>
         <div className="row m-1 ">
           <Products products={this.state.products} />
         </div>
