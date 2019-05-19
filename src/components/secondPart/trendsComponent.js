@@ -31,7 +31,7 @@ export default class TrendsComponent extends Component {
 
   render() {
     const products = this.state.pageOfItems.map(item => (
-      <div key={item.id} className="col-12 col-md-4 mt-4">
+      <div key={item.id} className="col-12 col-md-4 mt-4 px-5">
         <Card
           body
           className="text-center border-0 "

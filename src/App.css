@@ -99,3 +99,22 @@ background: #707070;
   height: 80px
 
 }
+.leftArrow{
+  width: 80px;
+  height: 38px;
+  background-color: #F84B4B;
+  vertical-align: center;
+}
+
+.rightArrow{
+  width: 80px;
+  height: 38px;
+  background-color: #F84B4B;
+  vertical-align: center;
+}
+.productImage{
+  cursor: pointer;
+}
+.addBtn{
+  cursor: pointer;
+}
