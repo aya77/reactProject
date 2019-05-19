@@ -72,3 +72,9 @@ a { cursor: pointer; }
   font-size: 70px ;
   color: #F84B4B ;
 }
+
+.branchesBar{
+  color :white ;
+  background-color: black
+
+}

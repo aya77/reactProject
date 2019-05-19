@@ -7,7 +7,9 @@ import {PRODUCTS} from './shared/products'
 import Intro from './components/Intro'
 import sunG from "./images/sunG.jpeg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel, faSearch,faUser,  faShoppingBag, faAlignJustify  } from '@fortawesome/free-solid-svg-icons'
+import { faAlignJustify  } from '@fortawesome/free-solid-svg-icons'
+
+import BranchesBar from './components/branchesBarComponant'
 class App extends Component{
   constructor(props){
     super(props);
@@ -49,6 +51,12 @@ class App extends Component{
           </div>     
                
           </div>
+
+        
+
+            <div className="row m-1 "> 
+            <BranchesBar/>
+            </div>
 
            <div className="row m-1 ">    
                   <Products products= {this.state.products}/>
