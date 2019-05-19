@@ -1,72 +1,90 @@
-import React,{Component} from 'react';
+import React, { Component } from "react";
 
-import Symbole from './components/navBarComponent'
-import Glasses from './components/Glasses'
-import Products from './components/forthPart/productsComponent'
-import {PRODUCTS} from './shared/products'
-import Intro from './components/Intro'
+import Symbole from "./components/navBarComponent";
+import Glasses from "./components/Glasses";
+import Products from "./components/forthPart/productsComponent";
+import { PRODUCTS } from "./shared/products";
+
+import BrandsComponent from "./components/fifthPart/brandsComponent";
+import FollowComponent from "./components/sixthPart/followComponent";
+import ContactsComponent from "./components/seventhPart/contactsComponent";
+
+import Intro from "./components/Intro";
 import sunG from "./images/sunG.jpeg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAlignJustify  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faStroopwafel,
+  faSearch,
+  faUser,
+  faShoppingBag,
+  faAlignJustify
+} from "@fortawesome/free-solid-svg-icons";
 
+import TypeComponent  from "./components/secondPart/typesComponent";
+import TrendsComponent from "./components/secondPart/trendsComponent"
 import BranchesBar from './components/branchesBarComponant'
-class App extends Component{
-  constructor(props){
+class App extends Component {
+  constructor(props) {
     super(props);
     this.state = {
-      products: PRODUCTS,
-    }
+      products: PRODUCTS
+    };
   }
-  render(){
+  render() {
     return (
       <div className="App">
-         <div className="row m-1 ">
-       
-         <div className=" col-3 m-3">
+        <div className="row m-1 ">
+          <div className=" col-3 m-3">
+            <span id="black">Happy </span>
+            <span className="color">V</span>
+            <span id="black">ision</span>
+          </div>
+          <div className=" col-1 mt-4">
+            <FontAwesomeIcon icon={faAlignJustify} />
+          </div>
+          <Symbole />
+        </div>
 
-           <span id = "black">Happy  </span>
-           <span className= "color">V</span>
-           <span id = "black">ision</span>
-      
-         
-      
-        
-         </div>  
-         <div  className =" col-1 mt-4" >
-         <FontAwesomeIcon icon={faAlignJustify} />
-           </div>
-          <Symbole/>
-        
+        <div className="row m-1 ">
+          <div className="col-4 ">
+            <Intro />
+          </div>
+          <div className="col-3">
+            <img
+              src="https://i.pinimg.com/564x/e9/00/0d/e9000dab632f80af73a0818c6baf1b94.jpg"
+              width="350px"
+              height="400px"
+            />
+          </div>
+          <div className="col-5">
+            <Glasses />
+          </div>
+        </div>
+        <div className="row">
+            <TypeComponent />
+          </div>
+          <div className="row">
+            <TrendsComponent />
+          </div>
+
+        <div className="row m-1 ">
+          <Products products={this.state.products} />
+        </div>
+
+        <div className="footer bg-light">
+          <div className="row m-1 ">
+            <FollowComponent />
           </div>
 
           <div className="row m-1 ">
-          <div className="col-4 ">
-               <Intro /> 
-          </div>   
-          <div className="col-3">  
-          <img src="https://i.pinimg.com/564x/e9/00/0d/e9000dab632f80af73a0818c6baf1b94.jpg" width="350px" height="400px" />
-          </div>   
-          <div className="col-5">  
-               <Glasses />
-          </div>     
-               
+            <ContactsComponent />
           </div>
-
-        
-
-            <div className="row m-1 "> 
-            <BranchesBar/>
-            </div>
-
-           <div className="row m-1 ">    
-                  <Products products= {this.state.products}/>
-            </div>      
+        </div>
       </div>
     );
   }
 }
 export default App;
-
 
 // import { Navbar, NavbarBrand } from 'reactstrap';
 // // fontAwsome

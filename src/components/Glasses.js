@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import logo from "../images/sunglasses_PNG150.png";
 import "../App.css";
 import Pagination from "./Pagination";
+import {
+  faChevronLeft,
+  faChevronRight
+} from "@fortawesome/free-solid-svg-icons";
 class Glasses extends Component {
   constructor() {
     super();
@@ -75,19 +79,27 @@ class Glasses extends Component {
   render() {
     return (
       <div className="container">
-        <div className="text-center">
+        <div className="row">
+       
           {this.state.pageOfItems.map(item => (
-            <div className="product">
+            <div className="col-6">
+       
               <img src={item.image} alt="logo" width="200px" height="100px" />
               <div key={item.id}>{item.description}</div>
               <div>{item.price}</div>
+           
             </div>
           ))}
           <Pagination
             items={this.state.exampleItems}
             onChangePage={this.onChangePage}
+            leftIcon={faChevronLeft}
+            centerButton={1}
+            rightIcon={faChevronRight}
+            itemsPerPage = {2}
           />
         </div>
+       
       </div>
     );
   }
