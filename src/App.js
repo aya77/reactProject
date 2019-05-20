@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import Symbole from "./components/navBarComponent";
-import Glasses from "./components/Glasses";
+import NavBarComponent from "./components/firstPart/navBarComponent";
+import Glasses from "./components/firstPart/Glasses";
 import Products from "./components/forthPart/productsComponent";
 import { PRODUCTS } from "./shared/products";
 
@@ -11,7 +11,7 @@ import ContactsComponent from "./components/seventhPart/contactsComponent";
 
 import SeperationComponent from './components/thirdPart/seperationComponent'
 
-import Intro from "./components/Intro";
+import Intro from "./components/firstPart/Intro";
 import sunG from "./images/sunG.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,7 +22,7 @@ import {
   faAlignJustify
 } from "@fortawesome/free-solid-svg-icons";
 
-import TypeComponent  from "./components/secondPart/typesComponent";
+import TypeComponent from "./components/secondPart/typesComponent";
 import TrendsComponent from "./components/secondPart/trendsComponent"
 import BranchesBarComponent from './components/secondPart/branchesBarComponent'
 class App extends Component {
@@ -34,48 +34,67 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <div className="row m-1 ">
-          <div className=" col-3 m-3">
-            <span id="black">Happy </span>
-            <span className="color">V</span>
-            <span id="black">ision</span>
-          </div>
-          <div className=" col-1 mt-4">
-            <FontAwesomeIcon icon={faAlignJustify} />
-          </div>
-          <Symbole />
-        </div>
 
-        <div className="row m-1">
+
+
+      <div className="App">
+
+
+        <div className="row">
           <div className="col-4 ">
-            <Intro />
+
+            <div className="row m-1 mb-5">
+              <div className=" col-9 mt-1">
+                <span id="black">Happy </span>
+                <span className="color">V</span>
+                <span id="black">ision</span>
+              </div>
+              <div className=" col-3 mt-3">
+                <FontAwesomeIcon icon={faAlignJustify} />
+              </div>
+            </div>
+
+            <div className="row m-1">
+              <div className="col-12 ">
+                <Intro />
+              </div>
+            </div>
+
           </div>
-          <div className="col-3 ">
+          <div className="col-3 p-0 m-0">
             <img
               src="https://i.pinimg.com/564x/e9/00/0d/e9000dab632f80af73a0818c6baf1b94.jpg"
-              width="350px"
-              height="500px"
+              width="370px"
+              height="730px"
               alt=""
             />
           </div>
-          <div className="col-5 ">
-            <Glasses />
+          <div className="col-4">
+            <div className="row d-flex justify-content-right">
+              <NavBarComponent />
+            </div>
+            <div className="row">
+              <Glasses />
+            </div>
           </div>
         </div>
-        <div className= "col-12">
-        <BranchesBarComponent/>
-          </div>
-        
+
+        <div className= "mb-auto">
+       
+          <BranchesBarComponent />
+       
+        </div>
+      
+
         <div className="row mt-5">
-            <TypeComponent />
-          </div>
-          <div className="row mt-5">
-            <TrendsComponent />
-          </div>
-          <div className="row bg-dark">
-            <SeperationComponent/>
-          </div>
+          <TypeComponent />
+        </div>
+        <div className="row mt-5">
+          <TrendsComponent />
+        </div>
+        <div className="row bg-dark">
+          <SeperationComponent />
+        </div>
         <div className="row m-1 ">
           <Products products={this.state.products} />
         </div>
@@ -85,11 +104,11 @@ class App extends Component {
             <FollowComponent />
           </div>
 
-          <div className="row m-1 " name ="foo" >
+          <div className="row m-1 " name="foo" >
             <ContactsComponent />
           </div>
         </div>
-      </div>
+      </div >
     );
   }
 }

@@ -3,7 +3,7 @@ class Intro extends Component {
 
     render() {
         return (  
-            <div>
+            <div className="mt-5">
         
             <div className="intro-title">
                 Welcom to 

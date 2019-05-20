@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../../App.css";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
@@ -116,7 +116,7 @@ export default class Pagination extends React.Component {
     }
 
     return (
-      <div className={this.props.centerButton === 1 ? "row mt-5" : "row"}>
+      <div className={this.props.centerButton === 1 ? "row mt-5 mb-0" : "row"}>
         <ul className="row pagination  ml-5">
           <li className={pager.currentPage === 1 ? "col-2 disabled" : "col-2"}>
             <a onClick={() => this.setPage(pager.currentPage - 1)}>
