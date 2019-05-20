@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import {GLASSESPRODUCT} from '../shared/products'
-import "../App.css";
+import {GLASSESPRODUCT} from '../../shared/products'
+import "../../App.css";
 import Pagination from "./Pagination";
 import {
   faChevronLeft,
@@ -25,9 +25,9 @@ class Glasses extends Component {
   }
   render() {
     return (
-      <div className="container">
+      <div className="container mt-5 mb-0">
         <div className="row justify-content-center">
-          <div className="col-6">
+          <div className="col-6 mb-5">
             <img
               src={this.state.currentGlass.image}
               alt="logo"
@@ -40,9 +40,9 @@ class Glasses extends Component {
             <div>{this.state.currentGlass.price}</div>
           </div>
         </div>
-        <div className="row m-2">
+        <div className="row mx-2">
           {this.state.pageOfItems.map(item => (
-            <div className="col-5 m-2 p-2">
+            <div className="col-5 mx-3 px-5 py-4">
               <img
               className="productImage"
                 width={170}

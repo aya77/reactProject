@@ -17,7 +17,7 @@ import {
   faArrowLeft,
   faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
-import Pagination from "../Pagination";
+import Pagination from "../firstPart/Pagination";
 export default class TypesComponent extends Component {
   constructor(props) {
     super(props);

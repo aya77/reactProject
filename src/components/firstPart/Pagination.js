@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../../App.css";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
@@ -116,18 +116,18 @@ export default class Pagination extends React.Component {
     }
 
     return (
-      <div className="row d-flex justify-content-center mt-5 ">
+      <div className={this.props.centerButton === 1 ? "row mt-5 mb-0" : "row"}>
         <ul className="row pagination  ml-5">
           <li className={pager.currentPage === 1 ? "col-2 disabled" : "col-2"}>
             <a onClick={() => this.setPage(pager.currentPage - 1)}>
               <div className={this.props.centerButton === 1 ? "leftArrow" : ""}>
-                <FontAwesomeIcon icon={this.props.leftIcon} />
+                <FontAwesomeIcon className="my-2" icon={this.props.leftIcon} />
               </div>
             </a>
           </li>
           {this.props.centerButton === 1 ? (
             <li  className="addBtn col-8">
-              <FontAwesomeIcon className="ml-3" color="red" icon={faShoppingBag} />
+              <FontAwesomeIcon className="mx-3" color="red" icon={faShoppingBag} />
                 ADD To CHART
             </li>
           ) : (
@@ -143,7 +143,7 @@ export default class Pagination extends React.Component {
           >
             <a onClick={() => this.setPage(pager.currentPage + 1)}>
               <div className={this.props.centerButton === 1 ? "rightArrow" : ""}>
-                <FontAwesomeIcon icon={this.props.rightIcon} />
+                <FontAwesomeIcon className="my-2" icon={this.props.rightIcon} />
               </div>
             </a>
           </li>
