@@ -248,3 +248,36 @@ export const GLASSESPRODUCT = [
     price: 40.2
   }
 ];
+
+export const BRANDS=[
+  {
+    id: 1,
+    image: "assets/images/logo3.png",
+ 
+  },
+  {
+    id: 1,
+    image: "assets/images/logo1.png",
+ 
+  }, {
+    id: 1,
+    image: "assets/images/logo2.png",
+ 
+  }, {
+    id: 1,
+    image: "assets/images/logo4.jpg",
+ 
+  }, {
+    id: 1,
+    image: "assets/images/logo5.png",
+ 
+  }, {
+    id: 1,
+    image: "assets/images/logo6.jpg",
+ 
+  }, {
+    id: 1,
+    image: "assets/images/logo7.png",
+ 
+  },
+]

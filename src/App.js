@@ -5,7 +5,7 @@ import Glasses from "./components/Glasses";
 import Products from "./components/forthPart/productsComponent";
 import { PRODUCTS } from "./shared/products";
 
-import BrandsComponent from "./components/fifthPart/brandsComponent";
+import OurBrandsComponent from "./components/fifthPart/ourBrandsComponent";
 import FollowComponent from "./components/sixthPart/followComponent";
 import ContactsComponent from "./components/seventhPart/contactsComponent";
 
@@ -78,6 +78,12 @@ class App extends Component {
         <div className="row m-1 ">
           <Products products={this.state.products} />
         </div>
+
+        <div className="row m-1 ">
+          < OurBrandsComponent/>
+        </div>
+
+       
 
         <div className="footer bg-light">
           <div className="row m-1 ">

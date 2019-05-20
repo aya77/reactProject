@@ -118,3 +118,7 @@ background: #707070;
 .addBtn{
   cursor: pointer;
 }
+.swipe{
+  overflow:auto;
+  white-space:nowrap;
+}
