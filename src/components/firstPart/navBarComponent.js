@@ -8,13 +8,13 @@ import { faSearch,faUser,  faShoppingBag, faMapMarker  } from '@fortawesome/free
 
 // end of font awsome
 
-class Symbole extends Component {
+class NavBarComponent extends Component {
 
 
     render() {
         return (
            
-                    <div className="col-4 ml-auto ">
+                    <div className="mb-5 ml-auto ">
                         <Navbar bg="secondary" variant="light">
                             <Nav className=" mx-auto"> 
                                 <NavLink href="#home">
@@ -43,4 +43,4 @@ class Symbole extends Component {
 
 }
 
-export default Symbole;
+export default NavBarComponent;
