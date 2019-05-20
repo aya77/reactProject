@@ -121,7 +121,7 @@ export default class Pagination extends React.Component {
           <li className={pager.currentPage === 1 ? "col-2 disabled" : "col-2"}>
             <a onClick={() => this.setPage(pager.currentPage - 1)}>
               <div className={this.props.centerButton === 1 ? "leftArrow" : ""}>
-                <FontAwesomeIcon className="my-2" icon={this.props.leftIcon} />
+                <FontAwesomeIcon className={this.props.centerButton === 1 ? "my-2" : "row my-2 text-danger"} icon={this.props.leftIcon} />
               </div>
             </a>
           </li>

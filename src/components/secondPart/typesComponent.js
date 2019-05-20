@@ -50,7 +50,7 @@ export default class TypesComponent extends Component {
     return (
       <div className="container mt-5">
         <div className="row">
-          <div className="col-9 d-flex justify-content-left">
+          <div className="col-9 d-flex justify-content-left font-weight-bold">
             WHAT ARE YOU LOOKING FOR?
           </div>
           <div className="col-3 mt-auto">

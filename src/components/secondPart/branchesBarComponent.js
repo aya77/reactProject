@@ -9,7 +9,7 @@ class BranchesBarComponent extends Component{
       return (
         <div className ="row branchesBar ">
           <div className=" col-9 text-left pt-4 pl-5" >
-          <strong >Select a  branch to jump into</strong>
+          <strong className="font-weight-bold">Select a  branch to jump into</strong>
           </div>
           <div  className=" col-3 text-left pt-4 pr-5" >
           <span> <strong >all branches
