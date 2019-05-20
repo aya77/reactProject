@@ -42,7 +42,7 @@ class Glasses extends Component {
         </div>
         <div className="row m-2">
           {this.state.pageOfItems.map(item => (
-            <div className="col-5 m-2 p-2">
+            <div className="col-5 mx-3 px-5 py-4">
               <img
               className="productImage"
                 width={170}

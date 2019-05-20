@@ -47,18 +47,19 @@ class App extends Component {
           <Symbole />
         </div>
 
-        <div className="row m-1 ">
+        <div className="row m-1">
           <div className="col-4 ">
             <Intro />
           </div>
-          <div className="col-3">
+          <div className="col-3 ">
             <img
               src="https://i.pinimg.com/564x/e9/00/0d/e9000dab632f80af73a0818c6baf1b94.jpg"
               width="350px"
-              height="400px"
+              height="500px"
+              alt=""
             />
           </div>
-          <div className="col-5">
+          <div className="col-5 ">
             <Glasses />
           </div>
         </div>
