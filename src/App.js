@@ -22,7 +22,7 @@ import {
   faAlignJustify
 } from "@fortawesome/free-solid-svg-icons";
 
-import TypeComponent  from "./components/secondPart/typesComponent";
+import TypeComponent from "./components/secondPart/typesComponent";
 import TrendsComponent from "./components/secondPart/trendsComponent"
 class App extends Component {
   constructor(props) {
@@ -62,14 +62,14 @@ class App extends Component {
           </div>
         </div>
         <div className="row mt-5">
-            <TypeComponent />
-          </div>
-          <div className="row mt-5">
-            <TrendsComponent />
-          </div>
-          <div className="row bg-dark">
-            <SeperationComponent/>
-          </div>
+          <TypeComponent />
+        </div>
+        <div className="row mt-5">
+          <TrendsComponent />
+        </div>
+        <div className="row bg-dark">
+          <SeperationComponent />
+        </div>
         <div className="row m-1 ">
           <Products products={this.state.products} />
         </div>
