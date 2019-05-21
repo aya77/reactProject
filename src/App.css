@@ -139,3 +139,7 @@ a {
   text-decoration: underline;
   text-align: right;
 }
+.swipe{
+  overflow:auto;
+  white-space:nowrap;
+}

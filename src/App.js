@@ -4,6 +4,7 @@ import NavBarComponent from "./components/firstPart/navBarComponent";
 import Glasses from "./components/firstPart/Glasses";
 import Products from "./components/forthPart/productsComponent";
 
+import OurBrandsComponent from "./components/fifthPart/ourBrandsComponent";
 import FollowComponent from "./components/sixthPart/followComponent";
 import ContactsComponent from "./components/seventhPart/contactsComponent";
 
@@ -74,6 +75,12 @@ class App extends Component {
         <div className="row m-1 ">
           <Products />
         </div>
+
+        <div className="row m-1 ">
+          < OurBrandsComponent/>
+        </div>
+
+       
 
         <div className="footer bg-light">
           <div className="row m-1 ">
