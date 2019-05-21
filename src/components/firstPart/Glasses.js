@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {GLASSESPRODUCT} from '../../shared/products'
+import { GLASSESPRODUCT } from "../../shared/products";
 import "../../App.css";
 import Pagination from "./Pagination";
 import {
@@ -25,9 +25,9 @@ class Glasses extends Component {
   }
   render() {
     return (
-      <div className="container mt-5 mb-0">
-        <div className="row justify-content-center">
-          <div className="col-6 mb-5">
+      <div className="">
+        <div className="row mx-5 d-flex justify-content-center">
+          <div className="col-12">
             <img
               src={this.state.currentGlass.image}
               alt="logo"
@@ -36,23 +36,27 @@ class Glasses extends Component {
             />
             <div key={this.state.currentGlass.id}>
               {this.state.currentGlass.description}
+              <br />
+              {this.state.currentGlass.price}
             </div>
-            <div>{this.state.currentGlass.price}</div>
           </div>
         </div>
-        <div className="row mx-2">
+
+        <div className="row">
           {this.state.pageOfItems.map(item => (
-            <div className="col-5 mx-3 px-5 py-4">
+            <div className="col-4  ml-5 mt-5">
               <img
-              className="productImage"
-                width={170}
-                height={80}
+                className="productImage"
+                width={160}
+                height={70}
                 onClick={() => this.setState({ currentGlass: item })}
                 src={item.image}
                 alt="logo"
               />
             </div>
           ))}
+        </div>
+        <div className="row">
           <Pagination
             items={this.state.exampleItems}
             onChangePage={this.onChangePage}

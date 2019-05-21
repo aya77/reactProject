@@ -3,15 +3,9 @@ import { TRENDS } from "../../shared/products";
 import {
   Card,
   CardImg,
-  CardImgOverlay,
   CardText,
   CardBody,
   CardTitle,
-  Navbar,
-  NavbarBrand,
-  NavItem,
-  NavLink,
-  Nav
 } from "reactstrap";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Pagination from "../firstPart/Pagination";

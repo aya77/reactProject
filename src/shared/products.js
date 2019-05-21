@@ -3,6 +3,154 @@ export const PRODUCTS = [
     id: 1,
     title: "aviator small metal",
     price: "4560$",
+    image: "assets/images/1.png"
+  },
+  {
+    id: 2,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/2.png"
+  },
+  {
+    id: 3,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/3.png"
+  },
+  {
+    id: 4,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/4.png"
+  },
+  {
+    id: 5,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/1.png"
+  },
+  {
+    id: 6,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/2.png"
+  },
+  {
+    id: 7,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/3.png"
+  },
+  {
+    id: 8,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/4.png"
+  },
+  {
+    id: 9,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/1.png"
+  },
+  {
+    id: 10,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/2.png"
+  },
+  {
+    id: 11,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/3.png"
+  },
+  {
+    id: 12,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/4.png"
+  }
+];
+export const SUNGLASSES = [
+  {
+    id: 1,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass1.png"
+  },
+  {
+    id: 2,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass2.png"
+  },
+  {
+    id: 3,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass3.png"
+  },
+  {
+    id: 4,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass1.png"
+  },
+  {
+    id: 5,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass2.png"
+  },
+  {
+    id: 6,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass3.png"
+  },
+  {
+    id: 7,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass1.png"
+  },
+  {
+    id: 8,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass2.png"
+  },
+  {
+    id: 9,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass3.png"
+  },
+  {
+    id: 10,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass1.png"
+  },
+  {
+    id: 11,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass2.png"
+  },
+  {
+    id: 12,
+    title: "aviator small metal",
+    price: "4560$",
+    image: "assets/images/glass3.png"
+  }
+];
+export const ACCESORIES = [
+  {
+    id: 1,
+    title: "aviator small metal",
+    price: "4560$",
     image: "assets/images/g.png"
   },
   {

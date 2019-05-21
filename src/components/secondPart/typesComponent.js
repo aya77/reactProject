@@ -4,14 +4,9 @@ import {
   Card,
   CardImg,
   CardImgOverlay,
-  CardText,
   CardBody,
   CardTitle,
-  Navbar,
-  NavbarBrand,
-  NavItem,
-  NavLink,
-  Nav
+
 } from "reactstrap";
 import {
   faArrowLeft,
@@ -40,8 +35,7 @@ export default class TypesComponent extends Component {
           <CardBody>
           <CardImgOverlay className="d-flex flex-column justify-content-end">
           <CardTitle>{item.type}</CardTitle>
-          </CardImgOverlay>
-           
+          </CardImgOverlay>   
           </CardBody>
         </Card>
       </div>
