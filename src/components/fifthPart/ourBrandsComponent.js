@@ -56,11 +56,14 @@ class OurBrandsComponent extends Component {
               onExited={this.onExited}
               key={item.src}
             >
-        
-              {elements[index]?<img src={elements[index].src} width= {100} height= {100} className="col-3"/>:""}
-              {elements[index+1]?<img src={elements[index+1].src} width= {100} height= {100} className="col-3"/>:""}
-              {elements[index+2]?<img src={elements[index+2].src}  width= {100} height= {100} className="col-3"/>:""}
-              {elements[index+3]?<img src={elements[index+3].src}  width= {100} height= {100} className="col-3"/>:""}
+                {
+                    console.log(elements[(index+1)%elements.length])
+
+                }
+              {elements[(index+0)%elements.length]?<img src={elements[(index+0)%elements.length].src} width= {100} height= {100} className="col-3"/>:""}
+              {elements[(index+1)%elements.length]?<img src={elements[(index+1)%elements.length].src} width= {100} height= {100} className="col-3"/>:""}
+              {elements[(index+2)%elements.length]?<img src={elements[(index+2)%elements.length].src} width= {100} height= {100} className="col-3"/>:""}
+              {elements[(index+3)%elements.length]?<img src={elements[(index+3)%elements.length].src} width= {100} height= {100} className="col-3"/>:""}
             </CarouselItem>
           );
       });
