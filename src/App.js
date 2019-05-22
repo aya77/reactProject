@@ -76,14 +76,14 @@ class App extends Component {
         <div className="row separatedBar ">
           <SeperationComponent />
         </div>
-        <div className="row m-1 ">
+        <div className="m-1 ">
           < SliderComponent items= {MALLS} width={120} height={250}/>
         </div>
         <div className="row m-1 ">
           <Products />
         </div>
 
-        <div className="row m-1">
+        <div className="m-1 ">
           < SliderComponent items= {BRANDS}  width={100} height={130}/>
         </div>
 
