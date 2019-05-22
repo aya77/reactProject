@@ -9,7 +9,6 @@ import FollowComponent from "./components/sixthPart/followComponent";
 import ContactsComponent from "./components/seventhPart/contactsComponent";
 
 import SeperationComponent from './components/thirdPart/seperationComponent'
-import ImagesSliderComponent from './components/thirdPart/imagesSliderComponent'
 
 import Intro from "./components/firstPart/Intro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -77,9 +76,6 @@ class App extends Component {
         <div className="row separatedBar ">
           <SeperationComponent />
         </div>
-        <div className="row">
-          <ImagesSliderComponent />
-        </div>
         <div className="row m-1 ">
           < SliderComponent items= {MALLS} width={120} height={250}/>
         </div>
@@ -87,13 +83,13 @@ class App extends Component {
           <Products />
         </div>
 
-        <div className="row m-1 ">
+        <div className="row m-1">
           < SliderComponent items= {BRANDS}  width={100} height={130}/>
         </div>
 
 
 
-        <div className="footer bg-light">
+        <div className="footer bg-light mt-5">
           <div className="row m-1 ">
             <FollowComponent />
           </div>
