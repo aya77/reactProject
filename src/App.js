@@ -9,7 +9,6 @@ import FollowComponent from "./components/sixthPart/followComponent";
 import ContactsComponent from "./components/seventhPart/contactsComponent";
 
 import SeperationComponent from './components/thirdPart/seperationComponent'
-import ImagesSliderComponent from './components/thirdPart/imagesSliderComponent'
 
 import Intro from "./components/firstPart/Intro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -96,7 +95,7 @@ class App extends Component {
 
 
 
-        <div className="footer bg-light">
+        <div className="footer bg-light mt-5">
           <div className="row m-1 ">
             <FollowComponent />
           </div>
