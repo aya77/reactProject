@@ -6,18 +6,25 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-
+import {
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardBody,
+  CardTitle,
+  CardGroup
+} from "reactstrap";
 
 class SliderComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      activeIndex: 0 ,
-      items : this.props.items ,
-      width: this.props.width , 
-      height :this.props.height
+    this.state = {
+      activeIndex: 0,
+      items: this.props.items,
+      width: this.props.width,
+      height: this.props.height
 
-    
+
     };
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
@@ -53,35 +60,90 @@ class SliderComponent extends Component {
 
   render() {
     const { activeIndex } = this.state;
-    const slides = this.state.items.map((item, index, elements) =>{
-        // do something
-        return (
-            <CarouselItem
-              onExiting={this.onExiting}
-              onExited={this.onExited}
-              key={item.src}
-            >
-                {
-                    console.log(elements[(index+1)%elements.length])
+    const slides = this.state.items.map((item, index, elements) => {
+      // do something
+      return (
+        <CarouselItem
+          onExiting={this.onExiting}
+          onExited={this.onExited}
+          key={item.src}
+          className="slider"
+        >
+          {
+            console.log(elements[(index + 1) % elements.length])
 
-                }
-              {elements[(index+0)%elements.length]?<img src={elements[(index+0)%elements.length].src} width = {this.state.width}height = {this.state.height} className="col-3"/>:""}
-              {elements[(index+1)%elements.length]?<img src={elements[(index+1)%elements.length].src} width = {this.state.width}height = {this.state.height} className="col-3"/>:""}
-              {elements[(index+2)%elements.length]?<img src={elements[(index+2)%elements.length].src} width = {this.state.width}height = {this.state.height} className="col-3"/>:""}
-              {elements[(index+3)%elements.length]?<img src={elements[(index+3)%elements.length].src} width = {this.state.width}height = {this.state.height} className="col-3"/>:""}
-            </CarouselItem>
-          );
-      });
+          }
+
+<CardGroup>
+          
+              {elements[(index + 0) % elements.length] ?
+
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height}>
+                  <CardImg src={elements[(index + 0) % elements.length].src} className=" embed-responsive-item"
+                    
+                  />
+                  <CardBody>
+                    <CardImgOverlay className=" justify-content-end">
+                      <CardTitle className="cardTitle">{elements[(index + 0) % elements.length].title}</CardTitle>
+                    </CardImgOverlay>
+                  </CardBody>
+                </Card>
+                : ""}
+        
+              {elements[(index + 1) % elements.length] ?
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9">
+                  <CardImg src={elements[(index + 1) % elements.length].src} className=" embed-responsive-item"
+                  
+                  />
+                  <CardBody>
+                    <CardImgOverlay className=" justify-content-end">
+                      <CardTitle className="cardTitle">{elements[(index + 1) % elements.length].title}</CardTitle>
+                    </CardImgOverlay>
+                  </CardBody>
+                </Card>
+                : ""}
+           
+          
+              {elements[(index + 2) % elements.length] ?
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height}>
+                  <CardImg src={elements[(index + 2) % elements.length].src} className=" embed-responsive-item"
+                    width={this.state.width} height={this.state.height}
+                  />
+                  <CardBody>
+                    <CardImgOverlay className=" justify-content-end">
+                      <CardTitle className="cardTitle">{elements[(index + 2) % elements.length].title}</CardTitle>
+                    </CardImgOverlay>
+                  </CardBody>
+                </Card>
+                : ""}
+    
+              {elements[(index + 3) % elements.length] ?
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} >
+                  <CardImg src={elements[(index + 3) % elements.length].src} className=" embed-responsive-item"
+                   
+                  />
+                  <CardBody>
+                    <CardImgOverlay className=" justify-content-end">
+                      <CardTitle className="cardTitle">{elements[(index + 3) % elements.length].title}</CardTitle>
+                    </CardImgOverlay>
+                  </CardBody>
+                </Card>
+                : ""}
+       </CardGroup>
+        
+        </CarouselItem>
+      );
+    });
 
     // const slides = items.map((item , index, elements) => {
-        // console.log(elements[elements.size%index])
+    // console.log(elements[elements.size%index])
     //   return (
     //     <CarouselItem
     //       onExiting={this.onExiting}
     //       onExited={this.onExited}
     //       key={item.src}
     //     >
-    
+
     //       <img src={item.src} alt={item.altText} className="col-3"/>
     //       <img src={elements[index-1].src} alt={item.altText} className="col-3"/>
     //       <img src={item.src} alt={item.altText} className="col-3"/>
@@ -91,19 +153,19 @@ class SliderComponent extends Component {
     // });
 
     return (
-        <div className="row">
-         <div className="col-12">
-      <Carousel
-        activeIndex={activeIndex}
-        next={this.next}
-        previous={this.previous}
-      >
-        <CarouselIndicators items={this.state.items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-      </Carousel>
-      </div>
+      <div className="row">
+        <div className="col-12">
+          <Carousel
+            activeIndex={activeIndex}
+            next={this.next}
+            previous={this.previous}
+          >
+            <CarouselIndicators items={this.state.items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+            {slides}
+            <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+            <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+          </Carousel>
+        </div>
       </div>
     );
   }
