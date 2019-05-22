@@ -4,14 +4,9 @@ import {
   Card,
   CardImg,
   CardImgOverlay,
-  CardText,
   CardBody,
   CardTitle,
-  Navbar,
-  NavbarBrand,
-  NavItem,
-  NavLink,
-  Nav
+
 } from "reactstrap";
 import {
   faArrowLeft,
@@ -40,8 +35,7 @@ export default class TypesComponent extends Component {
           <CardBody>
           <CardImgOverlay className="d-flex flex-column justify-content-end">
           <CardTitle>{item.type}</CardTitle>
-          </CardImgOverlay>
-           
+          </CardImgOverlay>   
           </CardBody>
         </Card>
       </div>
@@ -50,7 +44,7 @@ export default class TypesComponent extends Component {
     return (
       <div className="container mt-5">
         <div className="row">
-          <div className="col-9 d-flex justify-content-left">
+          <div className="col-9 d-flex justify-content-left font-weight-bold">
             WHAT ARE YOU LOOKING FOR?
           </div>
           <div className="col-3 mt-auto">

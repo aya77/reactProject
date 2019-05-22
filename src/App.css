@@ -32,96 +32,120 @@
   }
 }
 
-.product{
+.product {
   margin-left: 1%;
   float: left;
   width: 15%;
 }
-.allProducts{
-  width:50%;
+.allProducts {
+  width: 50%;
 }
-a { cursor: pointer; }
-
-
+a {
+  cursor: pointer;
+}
 
 .blog .carousel-indicators {
-	left: 0;
-	top: auto;
-    bottom: -40px;
-
+  left: 0;
+  top: auto;
+  bottom: -40px;
 }
 
 /* The colour of the indicators */
 .blog .carousel-indicators li {
-    background: #a3a3a3;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
+  background: #a3a3a3;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
 }
 
 .blog .carousel-indicators .active {
-background: #707070;
+  background: #707070;
 }
 @font-face {
-  font-family: 'Anton';
-  src: local('Anton Regular'), url('./fonts/Anton/Anton-Regular.ttf') format('truetype');
+  font-family: "Anton";
+  src: local("Anton Regular"),
+    url("./fonts/Anton/Anton-Regular.ttf") format("truetype");
 }
 
-
 .intro-title {
-  font-family: 'Anton';
-  font-size: 70px ;
+  font-family: "Anton";
+  font-size: 40px;
+  text-align: left;
 }
 
 .intro-body {
-  
-  font-size: 25px ;
+  font-size: 20px;
 }
 #black {
-  font-family: 'Anton';
-  font-size: 25px ;
+  font-family: "Anton";
+  font-size: 25px;
 }
 .color {
-  font-family: 'Anton';
-  font-size: 30px ;
-  color: #F84B4B ;
+  font-family: "Anton";
+  font-size: 30px;
+  color: red;
 }
 
-.intro-title-color{
-  font-family: 'Anton';
-  font-size: 70px ;
-  color: #F84B4B ;
+.intro-title-color {
+  font-family: "Anton";
+  font-size: 40px;
+  color: red;
 }
 
-.branchesBar{
-  color :white ;
-  background-color: black ;
-  height: 80px
-
+.branchesBar {
+  color: white;
+  background-color: black;
+  height: 80px;
+  width: 73.56em;
+  margin-top: -1.4%;
 }
-.leftArrow{
+.leftArrow {
   width: 80px;
   height: 38px;
-  background-color:red;
-  text-align: center;
-  margin-left: -39px;
+  background-color: red;
 }
 
-.rightArrow{
+.rightArrow {
   width: 80px;
   height: 38px;
-  background-color:red;
-  margin-left: 30px;
-
-
+  background-color: red;
 }
-.productImage{
+.productImage,
+.showMoreText {
   cursor: pointer;
 }
-.addBtn{
+.addBtn {
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 .seperation{
   background-color:black;
+=======
+.pag {
+  margin-left: -1.2%;
+}
+.rightArrowPag {
+  color: red;
+}
+.separatedBar {
+  background-color: black;
+  color: white;
+  width: 73.56em;
+  height: 180px;
+}
+.pre {
+  display: block;
+  font-size: 110.5%;
+  color: white;
+}
+.showMore {
+  color: red;
+  text-decoration: underline;
+  text-align: right;
+}
+.swipe{
+  overflow:auto;
+  white-space:nowrap;
+>>>>>>> b878e4eb54e73778e9a44dfffe95ff46f169d64a
 }
