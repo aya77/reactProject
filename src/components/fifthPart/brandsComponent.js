@@ -25,7 +25,7 @@ const items = [
   }
 ];
 
-class OurBrandsComponent extends Component {
+class SliderComponent extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -93,4 +93,4 @@ class OurBrandsComponent extends Component {
 }
 
 
-export default OurBrandsComponent;
+export default SliderComponent;

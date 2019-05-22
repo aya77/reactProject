@@ -4,7 +4,7 @@ import NavBarComponent from "./components/firstPart/navBarComponent";
 import Glasses from "./components/firstPart/Glasses";
 import Products from "./components/forthPart/productsComponent";
 
-import OurBrandsComponent from "./components/fifthPart/ourBrandsComponent";
+import SliderComponent from "./components/fifthPart/SliderComponent";
 import FollowComponent from "./components/sixthPart/followComponent";
 import ContactsComponent from "./components/seventhPart/contactsComponent";
 
@@ -17,6 +17,10 @@ import { faAlignJustify } from "@fortawesome/free-solid-svg-icons";
 import TypeComponent from "./components/secondPart/typesComponent";
 import TrendsComponent from "./components/secondPart/trendsComponent";
 import BranchesBarComponent from "./components/secondPart/branchesBarComponent";
+import { BRANDS } from "./shared/products";
+import { MALLS } from "./shared/products";
+
+
 class App extends Component {
 
   render() {
@@ -73,11 +77,14 @@ class App extends Component {
           <SeperationComponent />
         </div>
         <div className="row m-1 ">
+          < SliderComponent items= {MALLS} width={120} height={250}/>
+        </div>
+        <div className="row m-1 ">
           <Products />
         </div>
 
         <div className="row m-1 ">
-          < OurBrandsComponent/>
+          < SliderComponent items= {BRANDS}  width={100} height={130}/>
         </div>
 
        
