@@ -117,11 +117,6 @@ a {
 .addBtn {
   cursor: pointer;
 }
-<<<<<<< HEAD
-
-.seperation{
-  background-color:black;
-=======
 .pag {
   margin-left: -1.2%;
 }
@@ -147,5 +142,4 @@ a {
 .swipe{
   overflow:auto;
   white-space:nowrap;
->>>>>>> b878e4eb54e73778e9a44dfffe95ff46f169d64a
 }

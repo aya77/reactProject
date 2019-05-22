@@ -8,12 +8,8 @@ import OurBrandsComponent from "./components/fifthPart/ourBrandsComponent";
 import FollowComponent from "./components/sixthPart/followComponent";
 import ContactsComponent from "./components/seventhPart/contactsComponent";
 
-<<<<<<< HEAD
 import SeperationComponent from './components/thirdPart/seperationComponent'
 import ImagesSliderComponent from './components/thirdPart/imagesSliderComponent'
-=======
-import SeperationComponent from "./components/thirdPart/seperationComponent";
->>>>>>> b878e4eb54e73778e9a44dfffe95ff46f169d64a
 
 import Intro from "./components/firstPart/Intro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,8 +45,8 @@ class App extends Component {
           <div className="col-4 p-0 m-0">
             <img
               src="https://i.pinimg.com/564x/e9/00/0d/e9000dab632f80af73a0818c6baf1b94.jpg"
-              width="370px"
-              height="574px"
+              width="97.3%"
+              height="97.3%"
               alt=""
             />
           </div>
@@ -74,21 +70,21 @@ class App extends Component {
         <div className="row mt-5">
           <TrendsComponent />
         </div>
-        <div className="row seperation">
+        <div className="row separatedBar ">
           <SeperationComponent />
         </div>
         <div className="row">
-          <ImagesSliderComponent/>
+          <ImagesSliderComponent />
         </div>
         <div className="row m-1 ">
           <Products />
         </div>
 
         <div className="row m-1 ">
-          < OurBrandsComponent/>
+          < OurBrandsComponent />
         </div>
 
-       
+
 
         <div className="footer bg-light">
           <div className="row m-1 ">

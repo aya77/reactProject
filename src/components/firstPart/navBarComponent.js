@@ -11,7 +11,7 @@ class NavBarComponent extends Component {
     render() {
         return (
            
-                    <div className="mb-5 ml-auto">
+                    <div className=" mb-5 ml-auto">
                         <Navbar bg="secondary" variant="light">
                             <Nav className=" mx-auto"> 
                                 <NavLink href="#home">

@@ -31,8 +31,8 @@ class Glasses extends Component {
             <img
               src={this.state.currentGlass.image}
               alt="logo"
-              width="200px"
-              height="100px"
+              width="80%"
+              height="80%"
             />
             <div key={this.state.currentGlass.id}>
               {this.state.currentGlass.description}
@@ -42,13 +42,13 @@ class Glasses extends Component {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row justify-content-center">
           {this.state.pageOfItems.map(item => (
-            <div className="col-4  ml-5 mt-5">
+            <div className="col-6 col-md-4  ml-5 mt-5">
               <img
                 className="productImage"
-                width={160}
-                height={70}
+                width='100%'
+                height='100%'
                 onClick={() => this.setState({ currentGlass: item })}
                 src={item.image}
                 alt="logo"
