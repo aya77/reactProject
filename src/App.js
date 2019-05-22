@@ -83,6 +83,12 @@ class App extends Component {
         <div className="row m-1 ">
           <Products />
         </div>
+        <div className="row justify-content-center h-100 align-items-center mt-0">
+
+          <strong className="col-12 mb-auto display-4">
+            OUR HAPPY VISION BRANDS
+          </strong>
+        </div>
 
         <div className="m-1 ">
           < SliderComponent items= {BRANDS}  width={100} height={130}/>
