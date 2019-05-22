@@ -10,9 +10,9 @@ import FollowComponent from "./components/sixthPart/followComponent";
 import ContactsComponent from "./components/seventhPart/contactsComponent";
 
 import SeperationComponent from './components/thirdPart/seperationComponent'
+import ImagesSliderComponent from './components/thirdPart/imagesSliderComponent'
 
 import Intro from "./components/firstPart/Intro";
-import sunG from "./images/sunG.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStroopwafel,
@@ -92,8 +92,11 @@ class App extends Component {
         <div className="row mt-5">
           <TrendsComponent />
         </div>
-        <div className="row bg-dark">
+        <div className="row seperation">
           <SeperationComponent />
+        </div>
+        <div className="row">
+          <ImagesSliderComponent/>
         </div>
         <div className="row m-1 ">
           <Products products={this.state.products} />

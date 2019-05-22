@@ -7,7 +7,7 @@ class BranchesBarComponent extends Component{
     render(){
 
       return (
-        <div className ="row branchesBar  ">
+        <div className ="row branchesBar ">
           <div className=" col-9 text-left pt-4 pl-5" >
           <strong >Select a  branch to jump into</strong>
           </div>
@@ -17,6 +17,7 @@ class BranchesBarComponent extends Component{
           </strong>
           </span>
          </div>
+         
           </div>
       )
 
