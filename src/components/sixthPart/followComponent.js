@@ -43,7 +43,7 @@ class FollowComponent extends Component {
         )
 
         return (
-            <div className=" mt-1">
+            <div className="container mt-1">
                 <div className="row">
                     {input}
                     {follow}

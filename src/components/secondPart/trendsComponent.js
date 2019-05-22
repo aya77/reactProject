@@ -45,7 +45,7 @@ export default class TrendsComponent extends Component {
     ));
 
     return (
-      <div className=" mt-3">
+      <div className="container mt-3">
         <div className="row">
           <div className="col-9 d-flex justify-content-left font-weight-bold">
             CURRENTLY TRENDS
