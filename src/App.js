@@ -82,9 +82,9 @@ class App extends Component {
         <div className="row m-1 ">
           <Products />
         </div>
-        <div className="row justify-content-center h-100 align-items-center mt-0">
+        <div className="row justify-content-center align-items-center mt-5">
 
-          <strong className="col-12 mb-auto display-4">
+          <strong className="col-12 mb-auto ">
             OUR HAPPY VISION BRANDS
           </strong>
         </div>
