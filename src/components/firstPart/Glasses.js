@@ -42,9 +42,9 @@ class Glasses extends Component {
           </div>
         </div>
 
-        <div className="row justify-content-center">
+        <div className="row justify-content-center p-0 m-0">
           {this.state.pageOfItems.map(item => (
-            <div className="col-6 col-md-4  ml-5 mt-5">
+            <div className="col-6 col-md-4  ml-3 mt-5">
               <img
                 className="productImage"
                 width='100%'
@@ -56,7 +56,7 @@ class Glasses extends Component {
             </div>
           ))}
         </div>
-        <div className="row">
+        <div className="">
           <Pagination
             items={this.state.exampleItems}
             onChangePage={this.onChangePage}

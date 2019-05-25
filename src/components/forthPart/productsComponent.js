@@ -39,7 +39,7 @@ class Products extends Component {
       );
     });
     return (
-      <div>
+      <div className="container">
         <div>
           <Navbar color="" light expand="md" className="mt-5">
             <NavbarBrand href="/" className="font-weight-bold">
