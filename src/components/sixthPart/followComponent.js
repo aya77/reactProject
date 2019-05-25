@@ -7,7 +7,7 @@ import { SocialIcon } from 'react-social-icons';
 class FollowComponent extends Component {
     render() {
         const input = (
-            <div className="col-8 mt-1">
+            <div className="col-12 col-sm-8  m-1 ">
                 <div className="row">
                     recieve our newsletter
                 </div>
@@ -26,9 +26,9 @@ class FollowComponent extends Component {
         )
 
         const follow = (
-            <div className="col-3 mt-1 ml-auto">
+            <div className="col-12 col-sm-3 m-1 ml-auto">
 
-                <div className="row">
+                <div className="row pt-2">
                     Follow Us           
                 </div>
 
