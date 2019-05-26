@@ -11,8 +11,7 @@ import ContactsComponent from "./components/seventhPart/contactsComponent";
 import SeperationComponent from './components/thirdPart/seperationComponent'
 
 import Intro from "./components/firstPart/Intro";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAlignJustify } from "@fortawesome/free-solid-svg-icons";
+
 
 import TypeComponent from "./components/secondPart/typesComponent";
 import TrendsComponent from "./components/secondPart/trendsComponent";
@@ -28,22 +27,7 @@ class App extends Component {
       <div className="App container-fluid">
         <div className="row">
           <div className=" col-6 col-md-4">
-            <div className="row m-1 mb-5">
-              <div className=" col-9 mt-1">
-                <span id="black">Happy </span>
-                <span className="color">V</span>
-                <span id="black">ision</span>
-              </div>
-              <div className=" col-3 mt-3">
-                <FontAwesomeIcon icon={faAlignJustify} />
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-12 ">
-                <Intro />
-              </div>
-            </div>
+            <Intro />
           </div>
           <div className="col-6 col-md-4 p-0 m-0">
             <img
@@ -53,7 +37,7 @@ class App extends Component {
               alt=""
             />
           </div>
-          <div className=" col-12 col-md-4 order-last order-sm-0">
+          <div className=" col-12 col-md-4 order-last order-md-0">
             <div className="row">
               <NavBarComponent />
             </div>

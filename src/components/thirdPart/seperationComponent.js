@@ -5,7 +5,7 @@ class SeperationComponent extends Component {
     return (
       <div
       >
-        <div className="row justify-content-center h-100 align-items-center m-0">
+        <div className="row justify-content-center seperationBar align-items-center m-0">
           <pre className="col-12 mt-auto pre"> h a p p y   v i s i o n   n e w   e x p e r i e n c e </pre>
 
           <strong className="col-12 mb-auto display-4">
