@@ -7,7 +7,7 @@ class ContactsComponent extends Component {
     render() {
 
         const address = (
-            <div className="col-3">
+            <div className="col-6 col-sm-3">
                 <div className="row">
                     <FontAwesomeIcon icon={faMapPin} />
                 </div>
@@ -22,7 +22,7 @@ class ContactsComponent extends Component {
         )
 
         const contact = (
-            <div className="col-3">
+            <div className="col-6 col-sm-3">
                 <div className="row">
                     <FontAwesomeIcon icon={faPhone} />
                 </div>
@@ -37,7 +37,7 @@ class ContactsComponent extends Component {
         )
 
         const hours = (
-            <div className="col-3">
+            <div className="col-6 col-sm-3">
                 <div className="row">
                     <FontAwesomeIcon icon={faClock} />
                 </div>
@@ -52,7 +52,7 @@ class ContactsComponent extends Component {
         )
 
         const copyRights = (
-            <div className="col-3 justify-content-center">
+            <div className="col-6 col-sm-3 justify-content-center">
                 <div className="row mt-3 ml-1">
                     <span id="black">Happy </span>
                     <span className="color"> &nbsp;V</span>
