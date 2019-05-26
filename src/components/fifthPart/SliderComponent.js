@@ -78,8 +78,8 @@ class SliderComponent extends Component {
           
               {elements[(index + 0) % elements.length] ?
 
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height}>
-                  <CardImg src={elements[(index + 0) % elements.length].src} className=" embed-responsive-item"
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0">
+                  <CardImg src={elements[(index + 0) % elements.length].src}  height={this.state.height} className="p-0 border-0"
                     
                   />
                   <CardBody>
@@ -91,8 +91,8 @@ class SliderComponent extends Component {
                 : ""}
         
               {elements[(index + 1) % elements.length] ?
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9">
-                  <CardImg src={elements[(index + 1) % elements.length].src} className=" embed-responsive-item"
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0">
+                  <CardImg src={elements[(index + 1) % elements.length].src} height={this.state.height} className="p-0 border-0"
                   
                   />
                   <CardBody>
@@ -105,9 +105,9 @@ class SliderComponent extends Component {
            
           
               {elements[(index + 2) % elements.length] ?
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height}>
-                  <CardImg src={elements[(index + 2) % elements.length].src} className=" embed-responsive-item"
-                    width={this.state.width} height={this.state.height}
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0">
+                  <CardImg src={elements[(index + 2) % elements.length].src} height={this.state.height} className="p-0 border-0"
+                   
                   />
                   <CardBody>
                     <CardImgOverlay className=" justify-content-end">
@@ -118,13 +118,25 @@ class SliderComponent extends Component {
                 : ""}
     
               {elements[(index + 3) % elements.length] ?
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} >
-                  <CardImg src={elements[(index + 3) % elements.length].src} className=" embed-responsive-item"
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0" >
+                  <CardImg src={elements[(index + 3) % elements.length].src} height={this.state.height} className="p-0 border-0" className="p-0 border-0"
                    
                   />
                   <CardBody>
                     <CardImgOverlay className=" justify-content-end">
                       <CardTitle className="cardTitle">{elements[(index + 3) % elements.length].title}</CardTitle>
+                    </CardImgOverlay>
+                  </CardBody>
+                </Card>
+                : ""}
+                   {elements[(index + 4) % elements.length] ?
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0" className="p-0 border-0" >
+                  <CardImg src={elements[(index + 4) % elements.length].src} height={this.state.height} className="p-0 border-0"
+                   
+                  />
+                  <CardBody>
+                    <CardImgOverlay className=" justify-content-end">
+                      <CardTitle className="cardTitle">{elements[(index + 4) % elements.length].title}</CardTitle>
                     </CardImgOverlay>
                   </CardBody>
                 </Card>
