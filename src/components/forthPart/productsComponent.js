@@ -20,7 +20,8 @@ class Products extends Component {
       products: PRODUCTS,
       sunGlasses: SUNGLASSES,
       accessories: ACCESORIES,
-      currentOption: PRODUCTS
+      currentOption: PRODUCTS,
+      activeNav: "products"
     };
   }
 
@@ -28,8 +29,8 @@ class Products extends Component {
     const glasses = this.state.currentOption.map(product => {
       return (
         <div key={product.id} className="col-12 col-md-4 mt-4">
-          <Card body className="text-center border-0">
-            <CardImg width="100%" src={product.image} alt={product.title} />
+          <Card body className="text-center border-0 embed-responsive embed-responsive-16by9">
+            <CardImg height={90} className=" embed-responsive-item card-img-top" src={product.image} alt={product.title} />
             <CardBody>
               <CardTitle>{product.title} </CardTitle>
               <CardText className="text-danger">{product.price} </CardText>
@@ -48,8 +49,14 @@ class Products extends Component {
             <Nav className=" ml-auto" navbar>
               <NavItem>
                 <NavLink
+                  className={
+                    this.state.activeNav === "products" ? "navStyle" : ""
+                  }
                   onClick={() =>
-                    this.setState({ currentOption: this.state.products })
+                    this.setState({
+                      currentOption: this.state.products,
+                      activeNav: "products"
+                    })
                   }
                 >
                   Glasses
@@ -57,8 +64,14 @@ class Products extends Component {
               </NavItem>
               <NavItem>
                 <NavLink
+                  className={
+                    this.state.activeNav === "sunGlasses" ? "navStyle" : ""
+                  }
                   onClick={() =>
-                    this.setState({ currentOption: this.state.sunGlasses })
+                    this.setState({
+                      currentOption: this.state.sunGlasses,
+                      activeNav: "sunGlasses"
+                    })
                   }
                 >
                   Sunglasses
@@ -66,8 +79,14 @@ class Products extends Component {
               </NavItem>
               <NavItem>
                 <NavLink
+                  className={
+                    this.state.activeNav === "accessories" ? "navStyle" : ""
+                  }
                   onClick={() =>
-                    this.setState({ currentOption: this.state.accessories })
+                    this.setState({
+                      currentOption: this.state.accessories,
+                      activeNav: "accessories"
+                    })
                   }
                 >
                   Accessories

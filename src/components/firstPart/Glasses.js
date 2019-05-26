@@ -56,7 +56,7 @@ class Glasses extends Component {
             </div>
           ))}
         </div>
-        <div className="">
+        <div>
           <Pagination
             items={this.state.exampleItems}
             onChangePage={this.onChangePage}
