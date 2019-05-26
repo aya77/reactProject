@@ -20,7 +20,8 @@ class Products extends Component {
       products: PRODUCTS,
       sunGlasses: SUNGLASSES,
       accessories: ACCESORIES,
-      currentOption: PRODUCTS
+      currentOption: PRODUCTS,
+      activeNav: "products"
     };
   }
 
@@ -48,8 +49,14 @@ class Products extends Component {
             <Nav className=" ml-auto" navbar>
               <NavItem>
                 <NavLink
+                  className={
+                    this.state.activeNav === "products" ? "navStyle" : ""
+                  }
                   onClick={() =>
-                    this.setState({ currentOption: this.state.products })
+                    this.setState({
+                      currentOption: this.state.products,
+                      activeNav: "products"
+                    })
                   }
                 >
                   Glasses
@@ -57,8 +64,14 @@ class Products extends Component {
               </NavItem>
               <NavItem>
                 <NavLink
+                  className={
+                    this.state.activeNav === "sunGlasses" ? "navStyle" : ""
+                  }
                   onClick={() =>
-                    this.setState({ currentOption: this.state.sunGlasses })
+                    this.setState({
+                      currentOption: this.state.sunGlasses,
+                      activeNav: "sunGlasses"
+                    })
                   }
                 >
                   Sunglasses
@@ -66,8 +79,14 @@ class Products extends Component {
               </NavItem>
               <NavItem>
                 <NavLink
+                  className={
+                    this.state.activeNav === "accessories" ? "navStyle" : ""
+                  }
                   onClick={() =>
-                    this.setState({ currentOption: this.state.accessories })
+                    this.setState({
+                      currentOption: this.state.accessories,
+                      activeNav: "accessories"
+                    })
                   }
                 >
                   Accessories
