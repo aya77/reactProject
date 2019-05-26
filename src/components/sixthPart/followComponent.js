@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { Input, InputGroupAddon, InputGroup, InputGroupText } from 'reactstrap';
 import { SocialIcon } from 'react-social-icons';
-
+import '../../App.css';
 
 
 class FollowComponent extends Component {
     render() {
         const input = (
-            <div className="col-12 col-sm-8  m-1 ">
-                <div className="row">
-                    recieve our newsletter
+            <div className="col-12 col-md-9 mt-5">
+                <div className="row text-uppercase">
+                    <strong> recieve our newsletter</strong>
                 </div>
-                <div className="row mt-2">
-                    <InputGroup size='lg'>
+                <div className="row mt-4">
+                    <InputGroup >
                         <Input />
                         <InputGroupAddon addonType="append">
-                            <InputGroupText className="bg-danger">submit</InputGroupText>
+                            <InputGroupText style={{backgroundColor: 'tomato', color:'white'}} className="bg-red">submit</InputGroupText>
                         </InputGroupAddon>
                     </InputGroup>
                 </div>
@@ -26,16 +26,23 @@ class FollowComponent extends Component {
         )
 
         const follow = (
-            <div className="col-12 col-sm-3 m-1 ml-auto">
+            <div className="col-12 col-md-3 ml-auto  mt-5">
 
-                <div className="row pt-2">
-                    Follow Us           
+                <div className="row">
+                    <div className="col-12">
+                        <strong> FOLLOW US </strong>
+                    </div>
+
                 </div>
 
-                <div className="row mt-2">
-                    <SocialIcon url="http://facebook.com/sara.abdoj" className="ml-2" />
-                    <SocialIcon url="http://instagram.com" className="ml-2" />
-                    <SocialIcon url="http://youtube.com" className="ml-2" />
+                <div className="row justify-contnet-center mt-4">
+                    <div className="col-12">
+
+
+                        <SocialIcon url="http://facebook.com/sara.abdoj" className="ml-2" />
+                        <SocialIcon url="http://instagram.com" className="ml-2" />
+                        <SocialIcon url="http://youtube.com" className="ml-2" />
+                    </div>
 
                 </div>
 
@@ -43,7 +50,7 @@ class FollowComponent extends Component {
         )
 
         return (
-            <div className="container mt-1">
+            <div className="container">
                 <div className="row">
                     {input}
                     {follow}
