@@ -33,14 +33,14 @@ class Products extends Component {
             <CardImg width="100%" height="200" src={product.image} alt={product.title} />
             <CardBody>
               <CardTitle>{product.title} </CardTitle>
-              <CardText className="text-danger">{product.price} </CardText>
+              <CardText className="cardText">{product.price} </CardText>
             </CardBody>
           </Card>
         </div>
       );
     });
     return (
-      <div className="container">
+      <div className="container mb-5">
         <div>
           <Navbar color="" light expand="md" className="mt-5">
             <NavbarBrand href="/" className="font-weight-bold">

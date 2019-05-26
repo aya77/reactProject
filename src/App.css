@@ -76,7 +76,7 @@ a {
 .intro-body {
   font-size: 20px;
 }
-#black {
+.black {
   font-family: "Anton";
   font-size: 25px;
 }
@@ -121,7 +121,7 @@ a {
   /* margin-left: -1.2%; */
   width: 100%;
 }
-.rightArrowPag {
+.rightArrowPag, .cardText {
   color: red;
 }
 .separatedBar {
@@ -167,7 +167,11 @@ a {
   border: solid 3px red;
   border-radius: 50%;
   width: 20%;
-  height: 40%;
+  height: 25%;
   background-color: red;
 
+}
+
+.seperationBar{
+  height: 13em;
 }

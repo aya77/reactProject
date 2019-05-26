@@ -15,7 +15,7 @@ class FollowComponent extends Component {
                     <InputGroup >
                         <Input />
                         <InputGroupAddon addonType="append">
-                            <InputGroupText style={{backgroundColor: 'tomato', color:'white'}} className="bg-red">submit</InputGroupText>
+                            <InputGroupText style={{backgroundColor: 'red', color:'white'}} className="bg-red">submit</InputGroupText>
                         </InputGroupAddon>
                     </InputGroup>
                 </div>

@@ -38,7 +38,7 @@ export default class TrendsComponent extends Component {
           />
           <CardBody>
             <CardTitle>{item.title} </CardTitle>
-            <CardText className="text-danger">{item.price} </CardText>
+            <CardText className="cardText">{item.price} </CardText>
           </CardBody>
         </Card>
       </div>

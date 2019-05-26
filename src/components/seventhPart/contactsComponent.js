@@ -9,7 +9,7 @@ class ContactsComponent extends Component {
 
         const address = (
             <div className="col-4 col-md-3 p-1 ">
-                <div className="row contactsIconBG px-3">
+                <div className="row contactsIconBG m-1">
                     <FontAwesomeIcon className="contactsIcon m-auto" icon={faMapSigns} />
                 </div>
                 <div className="row mt-2 px-3">
@@ -23,7 +23,7 @@ class ContactsComponent extends Component {
   
         const contact = (
             <div className="col-4 col-md-3 p-1">
-                <div className="row contactsIconBG px-3">
+                <div className="row contactsIconBG m-1">
                     <FontAwesomeIcon className="contactsIcon m-auto" icon={faPhone} />
                 </div>
                 <div className="row mt-2 px-3">
@@ -38,7 +38,7 @@ class ContactsComponent extends Component {
 
         const hours = (
             <div className="col-4 col-md-3 p-1">
-                <div className="row  contactsIconBG px-3">
+                <div className="row contactsIconBG m-1">
                     <FontAwesomeIcon className="contactsIcon m-auto" icon={faClock} />
                 </div>
                 <div className="row mt-2 px-3">
@@ -54,18 +54,21 @@ class ContactsComponent extends Component {
       
     
     const copyRights = (
-      <div className="col-6 col-sm-3 justify-content-center">
-        <div className="row mt-3 ml-1">
-          <span id="black">Happy </span>
+      <div className="col-12 col-md-3  mt-4">
+        <div className="row mt-3 ml-1 justify-content-center">
+          <span className="black">Happy </span>
           <span className="color"> &nbsp;V</span>
-          <span id="black">ision</span>
+          <span className="black">ision</span>
         </div>
-        <div className="row ">
-          <pre>
+        <div className="row justify-contnet-center mt-3">
+        <div className="col-12 ml-2">
+        <pre>
             {" "}
             &copy; CopyRight 2016 <br />
             All Rights Reserved{" "}
           </pre>
+        </div>
+         
         </div>
       </div>
     );
