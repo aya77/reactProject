@@ -195,6 +195,17 @@ a {
 
 }
 
+.sideBrand{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.img360{
+  /* object-fit: cover; */
+  width: 25%;
+  height:25%;
+}
+
 /* .introSection{
   width: 636px;
 }

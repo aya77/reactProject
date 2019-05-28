@@ -22,7 +22,8 @@ class SliderComponent extends Component {
       activeIndex: 0,
       items: this.props.items,
       width: this.props.width,
-      height: this.props.height
+      height: this.props.height,
+      padding :this.props.padding
 
 
     };
@@ -76,10 +77,10 @@ class SliderComponent extends Component {
 
 <CardGroup>
           
-              {elements[(index + 0) % elements.length] ?
+              {
 
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0">
-                  <CardImg src={elements[(index + 0) % elements.length].src}  height={this.state.height} className="p-0 border-0"
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className={`p-${this.state.padding} border-0`}>
+                  <CardImg src={elements[(index + 0) % elements.length].src}  height={this.state.height} className={`p-${this.state.padding} border-0 sideBrand`}
                     
                   />
                   <CardBody>
@@ -88,11 +89,11 @@ class SliderComponent extends Component {
                     </CardImgOverlay>
                   </CardBody>
                 </Card>
-                : ""}
+               }
         
-              {elements[(index + 1) % elements.length] ?
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0">
-                  <CardImg src={elements[(index + 1) % elements.length].src} height={this.state.height} className="p-0 border-0"
+              {
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className={`p-${this.state.padding} border-0`}>
+                  <CardImg src={elements[(index + 1) % elements.length].src} height={this.state.height} className={`p-${this.state.padding} border-0 sideBrand`}
                   
                   />
                   <CardBody>
@@ -101,12 +102,12 @@ class SliderComponent extends Component {
                     </CardImgOverlay>
                   </CardBody>
                 </Card>
-                : ""}
+               }
            
           
-              {elements[(index + 2) % elements.length] ?
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0">
-                  <CardImg src={elements[(index + 2) % elements.length].src} height={this.state.height} className="p-0 border-0"
+              {
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className={`p-${this.state.padding} border-0`}>
+                  <CardImg src={elements[(index + 2) % elements.length].src} height={this.state.height} className={`p-${this.state.padding} border-0 `}
                    
                   />
                   <CardBody>
@@ -115,11 +116,11 @@ class SliderComponent extends Component {
                     </CardImgOverlay>
                   </CardBody>
                 </Card>
-                : ""}
+               }
     
-              {elements[(index + 3) % elements.length] ?
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0" >
-                  <CardImg src={elements[(index + 3) % elements.length].src} height={this.state.height} className="p-0 border-0" className="p-0 border-0"
+              {
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className={`p-${this.state.padding} border-0`} >
+                  <CardImg src={elements[(index + 3) % elements.length].src} height={this.state.height} className={`p-${this.state.padding} border-0 sideBrand`} 
                    
                   />
                   <CardBody>
@@ -128,10 +129,10 @@ class SliderComponent extends Component {
                     </CardImgOverlay>
                   </CardBody>
                 </Card>
-                : ""}
-                   {elements[(index + 4) % elements.length] ?
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className="p-0 border-0" className="p-0 border-0" >
-                  <CardImg src={elements[(index + 4) % elements.length].src} height={this.state.height} className="p-0 border-0"
+               }
+                   {
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className={`p-${this.state.padding} border-0`} >
+                  <CardImg src={elements[(index + 4) % elements.length].src} height={this.state.height} className={`p-${this.state.padding} border-0 sideBrand`}
                    
                   />
                   <CardBody>
@@ -140,7 +141,7 @@ class SliderComponent extends Component {
                     </CardImgOverlay>
                   </CardBody>
                 </Card>
-                : ""}
+               }
        </CardGroup>
         
         </CarouselItem>
