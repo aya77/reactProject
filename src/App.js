@@ -73,7 +73,7 @@ class App extends Component {
         </div>
 
         <div className="m-1 ">
-        < SliderComponent items= {BRANDS} height="110" padding="4"/>
+        < SliderComponent items= {BRANDS} height="110" padding="4" isBrands="1"/>
         </div>
 
 

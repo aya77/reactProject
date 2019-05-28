@@ -425,33 +425,33 @@ export const BRANDS=[
 export const MALLS=[
   {
     id: 1,
-    src: "assets/images/mall1.jpg",
+    src: "assets/images/mall1.png",
     title:"Mall of Arabia"
  
   },
   {
     id: 2,
-    src: "assets/images/mall2.jpg",
+    src: "assets/images/mall2.png",
     title:"Green Plazza Mall"
   }, {
     id: 3,
-    src: "assets/images/mall3.jpg",
+    src: "assets/images/mall3.png",
     title:"Mall of Arabia"
   }, {
     id: 4,
-    src: "assets/images/mall4.jpg",
+    src: "assets/images/mall1.png",
     title:"Green Plazza Mall"
   }, {
     id: 5,
-    src: "assets/images/mall5.jpg",
+    src: "assets/images/mall2.png",
     title:"Green Plazza Mall"
   }, {
     id: 6,
-    src: "assets/images/mall6.jpg",
+    src: "assets/images/mall3.png",
     title:"Mall of Arabia"
   }, {
     id: 7,
-    src: "assets/images/mall7.jpg",
+    src: "assets/images/mall1.png",
     title:"Green Plazza Mall"
   },
 ]

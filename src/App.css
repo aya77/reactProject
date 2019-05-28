@@ -185,6 +185,10 @@ a {
 
 .seperationBar{
   height: 13em;
+  background-image: url("./images/360img.png") ;
+  background-repeat: no-repeat ;
+  background-position:right;
+  background-size: 15% 100% ;
 }
 
 .photo{
@@ -202,8 +206,8 @@ a {
 
 .img360{
   /* object-fit: cover; */
-  width: 25%;
-  height:25%;
+  width: 100em;
+  height:100em;
 }
 
 /* .introSection{

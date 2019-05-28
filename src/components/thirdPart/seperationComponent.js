@@ -5,16 +5,14 @@ class SeperationComponent extends Component {
     return (
       <div>
         <div className="row justify-content-center seperationBar align-items-center m-0">
-        <div className="col-10" >
-          <pre className=" mt-auto pre"> h a p p y   v i s i o n   n e w   e x p e r i e n c e </pre>
+        
+          <pre className=" col-12 mt-auto pre"> h a p p y   v i s i o n   n e w   e x p e r i e n c e </pre>
 
           <strong className=" mb-auto display-4">
             360-DEGREE SHOPPING EXPERIENCE
           </strong>
-          </div>
-          <div className="col-2"> 
-          <img clasName =" img360" src= "assets/images/360img.png"/>
-          </div>
+         
+        
         </div>
       </div>
     );
