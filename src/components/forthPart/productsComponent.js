@@ -12,7 +12,7 @@ import {
   NavLink,
   Nav
 } from "reactstrap";
-
+import '../../App.css'
 class Products extends Component {
   constructor(props) {
     super(props);
@@ -28,9 +28,11 @@ class Products extends Component {
   render() {
     const glasses = this.state.currentOption.map(product => {
       return (
-        <div key={product.id} className="col-12 col-md-4 mt-4">
-          <Card body className="text-center border-0">
-            <CardImg width="100%" height="200" src={product.image} alt={product.title} />
+        <div key={product.id} className="col-12 col-lg-4 mt-4 ">
+          <Card className="text-center border-0">
+            <CardBody className=" productCard">
+              <CardImg top className='productCardImage img-fluid' src={product.image} alt={product.title} />
+            </CardBody>
             <CardBody>
               <CardTitle>{product.title} </CardTitle>
               <CardText className="cardText">{product.price} </CardText>
