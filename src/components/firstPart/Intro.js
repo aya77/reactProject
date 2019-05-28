@@ -11,7 +11,7 @@ class Intro extends Component {
 
         const vision = (
             <div className="row mt-1 mb-5  ">
-              <div className=" col-7 mt-1 ml-5 pl-4 text-left">
+              <div className=" col-6 mt-1 ml-5 pl-4 text-left">
                 <span className="black">Happy </span>
                 <span className="color">V</span>
                 <span className="black">ision</span>

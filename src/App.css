@@ -110,6 +110,17 @@ a {
   height: 38px;
   background-color: red;
 }
+.detailedPhoto{
+  width: 25em;
+  height: 12.5em;
+  object-fit: cover;
+  overflow:hidden;
+}
+.productImage{
+  width: 12.9375em;
+  height: 7.75em;
+  object-fit: none;
+}
 .productImage,
 .showMoreText {
   cursor: pointer;
@@ -175,3 +186,18 @@ a {
 .seperationBar{
   height: 13em;
 }
+
+.photo{
+  width: 25em;
+  height: 55em;
+  object-fit: cover;
+
+
+}
+
+/* .introSection{
+  width: 636px;
+}
+.glassesSection{
+  width: 633px;
+} */

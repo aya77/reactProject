@@ -331,67 +331,67 @@ export const TRENDS = [
 export const GLASSESPRODUCT = [
   {
     id: 1,
-    image: "assets/images/g.png",
+    image: "assets/images/glasses/1.png",
     description: "Round Folding",
     price: 99.99
   },
   {
     id: 2,
-    image: "assets/images/glass1.png",
+    image: "assets/images/glasses/2.png",
     description: "Round Folding",
     price: 99.99
   },
   {
     id: 3,
-    image: "assets/images/glass2.png",
+    image: "assets/images/glasses/3.png",
     description: "Round Folding",
     price: 80.5
   },
   {
     id: 4,
-    image: "assets/images/glass3.png",
+    image: "assets/images/glasses/4.png",
     description: "Round Folding",
     price: 40.2
   },
   {
     id: 5,
-    image: "assets/images/glass1.png",
+    image: "assets/images/glasses/1.png",
     description: "Round Folding",
     price: 80.5
   },
   {
     id: 6,
-    image: "assets/images/glass3.png",
+    image: "assets/images/glasses/3.png",
     description: "Round Folding",
     price: 40.2
   },
   {
     id: 7,
-    image: "assets/images/g.png",
+    image: "assets/images/glasses/2.png",
     description: "Round Folding",
     price: 99.99
   },
   {
     id: 8,
-    image: "assets/images/glass1.png",
+    image: "assets/images/glasses/4.png",
     description: "Round Folding",
     price: 80.5
   },
   {
     id: 9,
-    image: "assets/images/glass2.png",
+    image: "assets/images/glasses/2.png",
     description: "Round Folding",
     price: 40.2
   },
   {
     id: 10,
-    image: "assets/images/glass3.png",
+    image: "assets/images/glasses/1.png",
     description: "Round Folding",
     price: 40.2
   },
   {
     id: 11,
-    image: "assets/images/glass2.png",
+    image: "assets/images/glasses/3.png",
     description: "Round Folding",
     price: 40.2
   }

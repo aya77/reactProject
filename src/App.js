@@ -18,7 +18,7 @@ import TrendsComponent from "./components/secondPart/trendsComponent";
 import BranchesBarComponent from "./components/secondPart/branchesBarComponent";
 import { BRANDS } from "./shared/products";
 import { MALLS } from "./shared/products";
-
+import './App.css'
 
 class App extends Component {
 
@@ -29,11 +29,10 @@ class App extends Component {
           <div className=" col-6 col-md-4">
             <Intro />
           </div>
-          <div className="col-6 col-md-4 p-0 m-0">
+          <div className="col-6 col-md-4 p-0 m-0 ">
             <img
-              src="https://i.pinimg.com/564x/e9/00/0d/e9000dab632f80af73a0818c6baf1b94.jpg"
-              width="100%"
-              height="100%"
+              className="photo"
+              src="assets/images/forMen.png"
               alt=""
             />
           </div>
