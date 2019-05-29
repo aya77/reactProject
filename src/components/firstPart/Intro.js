@@ -22,9 +22,9 @@ class Intro extends Component {
         <div className="col-12 ">
           <div className="container mt-5">
             <div className="intro-title ml-5">
-              Welcom to
-              <p className=" intro-title-color m-0 p-0">happy vision</p>
-              the eye wear!
+              WELCOME TO
+              <p className=" intro-title-color m-0 p-0">HAPPY VISION</p>
+              THE EYE!
             </div>
             <div className="intro-body mx-5 mt-5 text-left">
               Happy Vision for Optical Frame, Sunglasses and Accessorize. Happy
