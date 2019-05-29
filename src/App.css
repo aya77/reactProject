@@ -240,13 +240,20 @@ a {
 	.imageOver
 	{
 		position: absolute;
-    left: -25%;
-    top:-5%;
+    max-width: 100%;
+    width: 50%;
+    height: 70%; 
+    top: 30%;      
+    left: -2%;
+    transform: translate( -50%, -50%);
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
   }
   .imageTitle{
     position: absolute;
     left: -12%;
-    bottom: 20%;
+    bottom: 15%;
     /* font-family: ﻿ProximaNova-Light, ﻿Archivo-Regular, ﻿Tahoma, ﻿AdobeInvisFont; */
 /* font-size: 32pt; */
 
