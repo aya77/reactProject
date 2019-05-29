@@ -65,6 +65,15 @@ a {
   font-family: "Anton";
   src: local("Anton Regular"),
     url("./fonts/Anton/Anton-Regular.ttf") format("truetype");
+   
+}
+
+@font-face{
+  font-family:"Cairo-Regular" ;
+  src: local("Anton Regular"),
+  url("./fonts/Cairo-Regular/Cairo-Regular.ttf") format("truetype");
+
+
 }
 
 .intro-title {
@@ -170,8 +179,10 @@ a {
   transform: translate(-50%, -50%);
 }
 .cardTitle{
-
-  color:white
+  padding-top:60%;
+  font-family: "Cairo-Regular";
+  font-size: 20pt;
+  color: rgba(255, 255, 255, 255);
 }
 
 .navStyle{
@@ -191,7 +202,7 @@ a {
 }
 
 .seperationBar{
-  height: 13em;
+  height: 11em;
   background-image: url("./images/360img.png") ;
   background-repeat: no-repeat ;
   background-position:right;
@@ -249,3 +260,4 @@ a {
 .glasses{
   height: 48.5em;
 }
+*/

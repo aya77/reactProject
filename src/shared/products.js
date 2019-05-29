@@ -451,7 +451,7 @@ export const MALLS=[
     title:"Mall of Arabia"
   }, {
     id: 7,
-    src: "assets/images/mall1.png",
+    src: "assets/images/mall2.png",
     title:"Green Plazza Mall"
   },
 ]

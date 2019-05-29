@@ -106,8 +106,8 @@ class SliderComponent extends Component {
            
           
               {
-                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className={ this.props.isBrands ?`p-${this.state.padding} border-0 sideBrand`:`p-${this.state.padding} border-0 `} >
-                  <CardImg src={elements[(index + 2) % elements.length].src} height={this.state.height} className={ this.props.isBrands ==="1"?`p-${this.state.padding} border-0 sideBrand`:`p-${this.state.padding} border-0 `} 
+                <Card body className="text-center border-0  embed-responsive embed-responsive-16by9"  width={this.state.width} height={this.state.height} className={ `p-${this.state.padding} border-0 `} >
+                  <CardImg src={elements[(index + 2) % elements.length].src} height={this.state.height} className={`p-${this.state.padding} border-0 `} 
                    
                   />
                   <CardBody>
