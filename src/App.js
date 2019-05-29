@@ -61,8 +61,8 @@ class App extends Component {
         <div className="row separatedBar ">
           <SeperationComponent />
         </div>
-        <div className="m-1 ">
-        < SliderComponent items= {MALLS} height="440" />
+        <div className="m-0  ">
+        < SliderComponent items= {MALLS} height="400" padding="0"/>
                 </div>
         <div className="row m-1 ">
           <Products />
@@ -75,7 +75,7 @@ class App extends Component {
         </div>
 
         <div className="m-1 ">
-        < SliderComponent items= {BRANDS} height="130"/>
+        < SliderComponent items= {BRANDS} height="110" padding="4" isBrands="1"/>
         </div>
 
 

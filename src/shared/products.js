@@ -388,68 +388,58 @@ export const GLASSESPRODUCT = [
 export const BRANDS = [
   {
     id: 1,
-    src: "assets/images/logo3.png"
+    src: "assets/images/brand1.png",
+ 
   },
   {
     id: 2,
-    src: "assets/images/logo1.png"
-  },
-  {
+    src: "assets/images/brand2.png",
+ 
+  }, {
     id: 3,
-    src: "assets/images/logo2.png"
-  },
-  {
+    src: "assets/images/brand3.png",
+ 
+  }, {
     id: 4,
-    src: "assets/images/logo4.jpg"
-  },
-  {
+    src: "assets/images/brand4.png",
+ 
+  }, {
     id: 5,
-    src: "assets/images/logo5.png"
-  },
-  {
-    id: 6,
-    src: "assets/images/logo6.jpg"
-  },
-  {
-    id: 7,
-    src: "assets/images/logo7.png"
-  }
-];
+    src: "assets/images/brand5.png",
+ 
+  }, 
+]
 
 export const MALLS = [
   {
     id: 1,
-    src: "assets/images/mall1.jpg",
-    title: "Mall of Arabia"
+    src: "assets/images/mall1.png",
+    title:"Mall of Arabia"
+ 
   },
   {
     id: 2,
-    src: "assets/images/mall2.jpg",
-    title: "Green Plazza Mall"
-  },
-  {
+    src: "assets/images/mall2.png",
+    title:"Green Plazza Mall"
+  }, {
     id: 3,
-    src: "assets/images/mall3.jpg",
-    title: "Mall of Arabia"
-  },
-  {
+    src: "assets/images/mall3.png",
+    title:"Mall of Arabia"
+  }, {
     id: 4,
-    src: "assets/images/mall4.jpg",
-    title: "Green Plazza Mall"
-  },
-  {
+    src: "assets/images/mall1.png",
+    title:"Green Plazza Mall"
+  }, {
     id: 5,
-    src: "assets/images/mall5.jpg",
-    title: "Green Plazza Mall"
-  },
-  {
+    src: "assets/images/mall2.png",
+    title:"Green Plazza Mall"
+  }, {
     id: 6,
-    src: "assets/images/mall6.jpg",
-    title: "Mall of Arabia"
-  },
-  {
+    src: "assets/images/mall3.png",
+    title:"Mall of Arabia"
+  }, {
     id: 7,
-    src: "assets/images/mall7.jpg",
-    title: "Green Plazza Mall"
-  }
-];
+    src: "assets/images/mall2.png",
+    title:"Green Plazza Mall"
+  },
+]
