@@ -70,8 +70,24 @@ a {
 
 @font-face{
   font-family:"Cairo-Regular" ;
-  src: local("Anton Regular"),
+  src: local("Cairo Regular"),
   url("./fonts/Cairo-Regular/Cairo-Regular.ttf") format("truetype");
+
+
+}
+
+
+@font-face{
+  font-family:"Cairo-ExtraLight" ;
+  src: local("Cairo-ExtraLight"),
+  url("./fonts/Cairo-ExtraLight/Cairo-ExtraLight.ttf") format("truetype");
+
+
+}
+@font-face{
+  font-family:"Agan" ;
+  src: local("Agan"),
+  url("./fonts/Agan/Agane55sign.ttf") format("truetype");
 
 
 }
@@ -252,6 +268,15 @@ a {
   /* object-fit: cover; */
   width: 100em;
   height:100em;
+}
+
+
+.shoppingTitle{
+  font-family:'Cairo-ExtraLight';
+  font-size: 30pt;
+}
+.newExpText{
+  font-family:'Agan'
 }
 
 /* .introSection{
