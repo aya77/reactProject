@@ -439,19 +439,19 @@ export const MALLS=[
     title:"Mall of Arabia"
   }, {
     id: 4,
-    src: "assets/images/mall1.png",
+    src: "assets/images/mall4.png",
     title:"Green Plazza Mall"
   }, {
     id: 5,
-    src: "assets/images/mall2.png",
+    src: "assets/images/mall1.png",
     title:"Green Plazza Mall"
   }, {
     id: 6,
-    src: "assets/images/mall3.png",
+    src: "assets/images/mall2.png",
     title:"Mall of Arabia"
   }, {
     id: 7,
-    src: "assets/images/mall2.png",
+    src: "assets/images/mall3.png",
     title:"Green Plazza Mall"
   },
 ]
