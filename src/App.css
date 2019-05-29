@@ -228,9 +228,28 @@ a {
   font-family: 'ProximaNova-Light' ,'Archivo-Regular', 'Tahoma', 'AdobeInvisFont'
 }
 
-/* .introSection{
-  width: 636px;
-}
-.glasses{
-  height: 48.5em;
-}
+/* .imageOver{
+  width: 50%;
+  align:left;
+  
+} */
+.meanImg
+	{
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.imageOver
+	{
+		position: absolute;
+    left: -25%;
+    top:-5%;
+  }
+  .imageTitle{
+    position: absolute;
+    left: -12%;
+    bottom: 20%;
+    /* font-family: ﻿ProximaNova-Light, ﻿Archivo-Regular, ﻿Tahoma, ﻿AdobeInvisFont; */
+/* font-size: 32pt; */
+
+  }

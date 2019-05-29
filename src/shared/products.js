@@ -224,32 +224,38 @@ export const TYPES = [
   {
     id: 1,
     type: "GLASSES",
-    image: "assets/images/type1.png"
+    image1: "assets/images/Types/type1.png",
+    image2: "assets/images/Types/type11.png"
   },
   {
     id: 2,
     type: "SUNGLASSES",
-    image: "assets/images/type2.jpg"
+    image1: "assets/images/Types/type1.png",
+    image2: "assets/images/Types/type22.png"
   },
   {
     id: 3,
     type: "GLASSES",
-    image: "assets/images/type1.png"
+    image1: "assets/images/Types/type1.png",
+    image2: "assets/images/Types/type11.png"
   },
   {
     id: 4,
     type: "SUNGLASSES",
-    image: "assets/images/type2.jpg"
+    image1: "assets/images/Types/type1.png",
+    image2: "assets/images/Types/type22.png"
   },
   {
     id: 5,
     type: "ACCESORIES",
-    image: "assets/images/type1.png"
+    image1: "assets/images/Types/type1.png",
+    image2: "assets/images/Types/type33.png"
   },
   {
     id: 6,
     type: "ACCESORIES",
-    image: "assets/images/type1.png"
+    image1: "assets/images/Types/type1.png",
+    image2: "assets/images/Types/type33.png"
   }
 ];
 
@@ -258,74 +264,56 @@ export const TRENDS = [
     id: 1,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/glass1.png"
+    image: "assets/images/products/1.png"
   },
   {
     id: 2,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/glass2.png"
+    image: "assets/images/products/2.png"
   },
   {
     id: 3,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/glass3.png"
+    image: "assets/images/products/3.png"
   },
   {
     id: 4,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/glass2.png"
+    image: "assets/images/products/4.png"
   },
   {
     id: 5,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/g.png"
+    image: "assets/images/products/5.png"
   },
   {
     id: 6,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/g.png"
+    image: "assets/images/products/6.png"
   },
   {
     id: 7,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/glass3.png"
+    image: "assets/images/products/7.png"
   },
   {
     id: 8,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/g.png"
+    image: "assets/images/products/8.png"
   },
   {
     id: 9,
     title: "aviator small metal",
     price: "4560$",
-    image: "assets/images/g.png"
+    image: "assets/images/products/9.png"
   },
-  {
-    id: 10,
-    title: "aviator small metal",
-    price: "4560$",
-    image: "assets/images/glass1.png"
-  },
-  {
-    id: 11,
-    title: "aviator small metal",
-    price: "4560$",
-    image: "assets/images/g.png"
-  },
-  {
-    id: 12,
-    title: "aviator small metal",
-    price: "4560$",
-    image: "assets/images/g.png"
-  }
 ];
 
 export const GLASSESPRODUCT = [
@@ -397,69 +385,71 @@ export const GLASSESPRODUCT = [
   }
 ];
 
-export const BRANDS=[
+export const BRANDS = [
   {
     id: 1,
-    src: "assets/images/logo3.png",
- 
+    src: "assets/images/logo3.png"
   },
   {
     id: 2,
-    src: "assets/images/logo1.png",
- 
-  }, {
-    id: 3,
-    src: "assets/images/logo2.png",
- 
-  }, {
-    id: 4,
-    src: "assets/images/logo4.jpg",
- 
-  }, {
-    id: 5,
-    src: "assets/images/logo5.png",
- 
-  }, {
-    id: 6,
-    src: "assets/images/logo6.jpg",
- 
-  }, {
-    id: 7,
-    src: "assets/images/logo7.png",
- 
+    src: "assets/images/logo1.png"
   },
-]
+  {
+    id: 3,
+    src: "assets/images/logo2.png"
+  },
+  {
+    id: 4,
+    src: "assets/images/logo4.jpg"
+  },
+  {
+    id: 5,
+    src: "assets/images/logo5.png"
+  },
+  {
+    id: 6,
+    src: "assets/images/logo6.jpg"
+  },
+  {
+    id: 7,
+    src: "assets/images/logo7.png"
+  }
+];
 
-export const MALLS=[
+export const MALLS = [
   {
     id: 1,
     src: "assets/images/mall1.jpg",
-    title:"Mall of Arabia"
- 
+    title: "Mall of Arabia"
   },
   {
     id: 2,
     src: "assets/images/mall2.jpg",
-    title:"Green Plazza Mall"
-  }, {
+    title: "Green Plazza Mall"
+  },
+  {
     id: 3,
     src: "assets/images/mall3.jpg",
-    title:"Mall of Arabia"
-  }, {
+    title: "Mall of Arabia"
+  },
+  {
     id: 4,
     src: "assets/images/mall4.jpg",
-    title:"Green Plazza Mall"
-  }, {
+    title: "Green Plazza Mall"
+  },
+  {
     id: 5,
     src: "assets/images/mall5.jpg",
-    title:"Green Plazza Mall"
-  }, {
+    title: "Green Plazza Mall"
+  },
+  {
     id: 6,
     src: "assets/images/mall6.jpg",
-    title:"Mall of Arabia"
-  }, {
+    title: "Mall of Arabia"
+  },
+  {
     id: 7,
     src: "assets/images/mall7.jpg",
-    title:"Green Plazza Mall"
-  },
-]
+    title: "Green Plazza Mall"
+  }
+];

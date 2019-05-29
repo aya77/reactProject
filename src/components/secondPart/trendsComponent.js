@@ -34,7 +34,7 @@ export default class TrendsComponent extends Component {
           height={90}
             src={item.image}
             className="card-img-top "
-            alt={item.type}
+            alt={item.title}
           />
           <CardBody>
             <CardTitle>{item.title} </CardTitle>
