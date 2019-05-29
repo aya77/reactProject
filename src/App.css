@@ -253,3 +253,8 @@ a {
 /* font-size: 32pt; */
 
   }
+  .trendTitle{
+    position: absolute;
+    bottom: 3em;
+    left:3em;
+  }

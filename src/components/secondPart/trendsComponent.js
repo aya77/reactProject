@@ -25,22 +25,17 @@ export default class TrendsComponent extends Component {
 
   render() {
     const products = this.state.pageOfItems.map(item => (
-      <div key={item.id} className="col-12 col-md-4 mt-4 px-5">
-        <Card
-          body
-          className="text-center border-0 "
-        >
-          <CardImg
-          height={90}
-            src={item.image}
-            className="card-img-top "
-            alt={item.title}
-          />
-          <CardBody>
-            <CardTitle>{item.title} </CardTitle>
-            <CardText className="cardText">{item.price} </CardText>
-          </CardBody>
-        </Card>
+      <div key={item.id} className="col-12 col-md-4 px-5">
+      
+          <Card className="text-center border-0">
+            <CardBody className=" productCard">
+              <CardImg top className='productCardImage img-fluid' src={item.image} alt={item.title} />
+            </CardBody>
+            <CardBody>
+              <CardTitle className="trendTitle">{item.title}<br /><span className="cardText">{item.price}</span> </CardTitle>
+              {/* <CardText className="cardText">{item.price} </CardText> */}
+            </CardBody>
+          </Card>
       </div>
     ));
 
