@@ -78,6 +78,7 @@ a {
 
 .intro-title {
   font-family: "archivo";
+  font-weight: bold;
   font-size: 40px;
   text-align: left;
 }
@@ -292,3 +293,19 @@ a {
   height: 48.5em;
 }
 */
+
+.explore{
+  background-color: red;
+  width:20%;
+  /* height: ; */
+  margin-top: 27%;
+  font-size: 18px;
+  
+}
+.rotateText{
+  margin-left:45%;
+  width: 0;
+  font-family: "archivo";
+  word-wrap: break-word;
+  color: white;
+}
