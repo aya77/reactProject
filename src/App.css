@@ -62,9 +62,9 @@ a {
   background: #707070;
 }
 @font-face {
-  font-family: "Anton";
-  src: local("Anton Regular"),
-    url("./fonts/Anton/Anton-Regular.ttf") format("truetype");
+  font-family: "archivo";
+  src: local("archivo"),
+    url("./fonts/archivo/Archivo-Regular.ttf") format("truetype");
    
 }
 
@@ -93,12 +93,13 @@ a {
 }
 
 .intro-title {
-  font-family: "Anton";
+  font-family: "archivo";
   font-size: 40px;
   text-align: left;
 }
 
 .intro-body {
+  font-family: "archivo";
   font-size: 20px;
 }
 .black {
@@ -170,8 +171,6 @@ a {
 .separatedBar {
   background-color: black;
   color: white;
-  /* width: 73.56em;
-  height: 180px; */
 }
 .pre {
   display: block;
@@ -259,6 +258,38 @@ a {
   font-family: 'ProximaNova-Light' ,'Archivo-Regular', 'Tahoma', 'AdobeInvisFont'
 }
 
+.meanImg
+	{
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.imageOver
+	{
+		position: absolute;
+    max-width: 100%;
+    width: 50%;
+    height: 70%; 
+    top: 30%;      
+    left: -2%;
+    transform: translate( -50%, -50%);
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+  }
+  .imageTitle{
+    position: absolute;
+    left: -12%;
+    bottom: 15%;
+    /* font-family: ﻿ProximaNova-Light, ﻿Archivo-Regular, ﻿Tahoma, ﻿AdobeInvisFont; */
+/* font-size: 32pt; */
+
+  }
+  .trendTitle{
+    position: absolute;
+    bottom: 3em;
+    left:3em;
+  }
 .sideBrand{
   opacity: 0.5;
   filter: alpha(opacity=50);

@@ -36,7 +36,7 @@ class App extends Component {
               alt=""
             />
           </div>
-          <div className=" col-4 col-md-4 order-last order-md-0">
+          <div className=" col-6 col-md-4 order-last order-md-0">
             <div className="row">
               <NavBarComponent />
             </div>
