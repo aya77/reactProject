@@ -112,8 +112,8 @@ a {
   background-color: red;
 }
 .detailedPhoto{
-  width: 25em;
-  height: 12.5em;
+  /* width: 25em;
+  height: 12.5em; */
   max-width:100%;
   object-fit: cover;
   overflow:hidden;
@@ -137,7 +137,7 @@ a {
 .pag {
   /* margin-left: -1.2%; */
   width: 100%;
-  margin-top: 44%;
+  margin-top: 19.5%;
 }
 .rightArrowPag, .cardText {
   color: red;
@@ -225,12 +225,6 @@ a {
 }
 
 .text{
-  font-family: 'ProximaNova-Light' ,'Archivo-Regular', 'Tahoma', 'AdobeInvisFont'
+  font-family: ProximaNova-Light ,Archivo-Regular, Tahoma, AdobeInvisFont
 }
 
-/* .introSection{
-  width: 636px;
-}
-.glasses{
-  height: 48.5em;
-}
