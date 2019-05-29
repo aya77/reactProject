@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAlignJustify } from "@fortawesome/free-solid-svg-icons";
-
+import happyVision from "../../images/happyVision.png"
 class Intro extends Component {
 
 
@@ -12,9 +12,7 @@ class Intro extends Component {
         const vision = (
             <div className="row mt-1 mb-5  ">
               <div className=" col-6 mt-1 ml-5 pl-4 text-left">
-                <span className="black">Happy </span>
-                <span className="color">V</span>
-                <span className="black">ision</span>
+                 <img src={happyVision}/>
               </div>
               <div className=" col-3 mt-3 ml-auto">
                 <FontAwesomeIcon icon={faAlignJustify} />
