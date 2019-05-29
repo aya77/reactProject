@@ -137,6 +137,7 @@ a {
 .pag {
   /* margin-left: -1.2%; */
   width: 100%;
+  margin-top: 44%;
 }
 .rightArrowPag, .cardText {
   color: red;
@@ -230,6 +231,6 @@ a {
 /* .introSection{
   width: 636px;
 }
-.glassesSection{
-  width: 633px;
-} */
+.glasses{
+  height: 48.5em;
+}

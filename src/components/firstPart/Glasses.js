@@ -27,7 +27,7 @@ class Glasses extends Component {
     return (
       <div className=" ">
         <div className="row d-flex p-0 m-0 justify-content-center">
-          <div className="col-12 ">
+          <div className="col-12">
             <div className="detailedPhoto">
               <img
                 className=""

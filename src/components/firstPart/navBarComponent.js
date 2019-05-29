@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 
 
 import { Navbar, Nav, NavLink } from 'reactstrap';
-// fontAwsome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faUser, faShoppingBag, faMapMarker } from '@fortawesome/free-solid-svg-icons'
+import { faSearch, faUserAlt, faShoppingBag, faMapMarkerAlt, faUser } from '@fortawesome/free-solid-svg-icons'
 class NavBarComponent extends Component {
 
 
@@ -18,20 +17,20 @@ class NavBarComponent extends Component {
                     <div className="col-12 mb-5 pl-5 m-0 p-0">
                         <Navbar bg="secondary" variant="light">
                             <Nav className=" mx-auto">
-                                <NavLink href="#search">
+                                <NavLink>
                                     <FontAwesomeIcon className="icons" icon={faSearch} />
                                 </NavLink>
 
-                                <NavLink href="#map">
-                                    <FontAwesomeIcon className="icons" icon={faMapMarker} />
+                                <NavLink>
+                                    <FontAwesomeIcon className="icons" icon={faMapMarkerAlt} />
                                 </NavLink>
 
-                                <NavLink href="#shopping">
+                                <NavLink >
                                     <FontAwesomeIcon className="icons" icon={faShoppingBag} />
                                 </NavLink>
 
-                                <NavLink href="#user">
-                                    <FontAwesomeIcon className="icons" icon={faUser} />
+                                <NavLink >
+                                    <FontAwesomeIcon className="icons" icon={faUserAlt} />
                                 </NavLink>
                             </Nav>
                         </Navbar>
