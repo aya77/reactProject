@@ -8,7 +8,7 @@ class ContactsComponent extends Component {
    
 
         const address = (
-            <div className="col-4 col-md-3 p-1 ">
+            <div className="col-4 col-md-3 p-1 text">
                 <div className="row contactsIconBG m-1">
                     <FontAwesomeIcon className="contactsIcon m-auto" icon={faMapSigns} />
                 </div>
@@ -22,7 +22,7 @@ class ContactsComponent extends Component {
             
   
         const contact = (
-            <div className="col-4 col-md-3 p-1">
+            <div className="col-4 col-md-3 p-1 ">
                 <div className="row contactsIconBG m-1">
                     <FontAwesomeIcon className="contactsIcon m-auto" icon={faPhone} />
                 </div>
@@ -74,7 +74,7 @@ class ContactsComponent extends Component {
     );
     return (
       <div className="container mt-5 mb-5">
-        <div className="row">
+        <div className="row text">
           {address}
           {contact}
           {hours}

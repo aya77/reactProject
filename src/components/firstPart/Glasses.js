@@ -27,7 +27,7 @@ class Glasses extends Component {
     return (
       <div className=" ">
         <div className="row d-flex p-0 m-0 justify-content-center">
-          <div className="col-12 ">
+          <div className="col-12">
             <div className="detailedPhoto">
               <img
                 className=""
@@ -48,7 +48,7 @@ class Glasses extends Component {
 
         <div className="row justify-content-center p-0 m-0">
           {this.state.pageOfItems.map(item => (
-            <div className=" col-4  ml-3 mt-5 ">
+            <div className="col-4 mx-3 p-0 mt-5 ">
               <img
                 className="productImage"
                 onClick={() => this.setState({ currentGlass: item })}
