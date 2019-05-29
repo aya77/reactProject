@@ -62,9 +62,9 @@ a {
   background: #707070;
 }
 @font-face {
-  font-family: "Anton";
-  src: local("Anton Regular"),
-    url("./fonts/Anton/Anton-Regular.ttf") format("truetype");
+  font-family: "archivo";
+  src: local("archivo"),
+    url("./fonts/archivo/Archivo-Regular.ttf") format("truetype");
    
 }
 
@@ -77,12 +77,13 @@ a {
 }
 
 .intro-title {
-  font-family: "Anton";
+  font-family: "archivo";
   font-size: 40px;
   text-align: left;
 }
 
 .intro-body {
+  font-family: "archivo";
   font-size: 20px;
 }
 .black {
