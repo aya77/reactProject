@@ -8,14 +8,14 @@ class FollowComponent extends Component {
     render() {
         const input = (
             <div className="col-12 col-md-9 mt-5">
-                <div className="row text-uppercase">
+                <div className="row text-uppercase text">
                     <strong> recieve our newsletter</strong>
                 </div>
                 <div className="row mt-4">
                     <InputGroup >
                         <Input />
                         <InputGroupAddon addonType="append">
-                            <InputGroupText style={{backgroundColor: 'red', color:'white'}} className="bg-red">submit</InputGroupText>
+                            <InputGroupText style={{backgroundColor: '#ff3d12', color:'white'}} className="bg-red">submit</InputGroupText>
                         </InputGroupAddon>
                     </InputGroup>
                 </div>
@@ -29,7 +29,7 @@ class FollowComponent extends Component {
             <div className="col-12 col-md-3 ml-auto  mt-5">
 
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 text">
                         <strong> FOLLOW US </strong>
                     </div>
 

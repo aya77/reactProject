@@ -48,7 +48,7 @@ class Glasses extends Component {
 
         <div className="row justify-content-center p-0 m-0">
           {this.state.pageOfItems.map(item => (
-            <div className=" col-5 mr-2 mt-3 ">
+            <div className="col-4 mx-3 p-0 mt-5 ">
               <img
                 className="productImage"
                 onClick={() => this.setState({ currentGlass: item })}
