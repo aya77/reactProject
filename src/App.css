@@ -62,18 +62,37 @@ a {
   background: #707070;
 }
 @font-face {
-  font-family: "Anton";
-  src: local("Anton Regular"),
-    url("./fonts/Anton/Anton-Regular.ttf") format("truetype");
+  font-family: "archivo";
+  src: local("archivo"),
+    url("./fonts/archivo/Archivo-Regular.ttf") format("truetype");
+   
 }
 
+
+
+@font-face{
+  font-family:"Cairo-Regular" ;
+  src: local("Anton Regular"),
+  url("./fonts/Cairo-Regular/Cairo-Regular.ttf") format("truetype");
+
+
+}
+
+@font-face {
+	font-family: 'proximanovalight';
+	src: url('./fonts/proximanovalight/proximanovalight.eot');
+	src: local('proximanovalight'), url('./fonts/proximanovalight/proximanovalight.woff') format('woff'), url('./fonts/proximanovalight/proximanovalight.ttf') format('truetype');
+}
+
+
 .intro-title {
-  font-family: "Anton";
+  font-family: "archivo";
   font-size: 40px;
   text-align: left;
 }
 
 .intro-body {
+  font-family: "archivo";
   font-size: 20px;
 }
 .black {
@@ -101,14 +120,14 @@ a {
 }
 .leftArrow {
   width: 100%;
-  height: 38px;
+  height: 100%;
   background-color: red;
   /* margin-left: -100%; */
 }
 
 .rightArrow {
   width: 100%;
-  height: 38px;
+  height: 100%;
   background-color: red;
 }
 .detailedPhoto{
@@ -137,7 +156,7 @@ a {
 .pag {
   /* margin-left: -1.2%; */
   width: 100%;
-  margin-top: 19.5%;
+  margin-top: 34%;
 }
 .rightArrowPag, .cardText {
   color: red;
@@ -145,8 +164,6 @@ a {
 .separatedBar {
   background-color: black;
   color: white;
-  /* width: 73.56em;
-  height: 180px; */
 }
 .pre {
   display: block;
@@ -170,8 +187,10 @@ a {
   transform: translate(-50%, -50%);
 }
 .cardTitle{
-
-  color:white
+  padding-top:60%;
+  font-family: "Cairo-Regular";
+  font-size: 20pt;
+  color: rgba(255, 255, 255, 255);
 }
 
 .navStyle{
@@ -191,7 +210,11 @@ a {
 }
 
 .seperationBar{
-  height: 13em;
+  height: 11em;
+  background-image: url("./images/360img.png") ;
+  background-repeat: no-repeat ;
+  background-position:right;
+  background-size: 15% 100% ;
 }
 
 .photo{
@@ -208,7 +231,7 @@ a {
   width: 100%;     
   height: 18.75em;
   overflow: hidden;
-  /* object-fit: contain; */
+  object-fit: cover;
 }
 
 .productCardImage{
@@ -225,6 +248,58 @@ a {
 }
 
 .text{
-  font-family: ProximaNova-Light ,Archivo-Regular, Tahoma, AdobeInvisFont
+  font-family: "proximanovalight", "archivo";
+  /* font-size: 19pt; */
+  color: rgba(0, 0, 0, 255);
 }
 
+.meanImg
+	{
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.imageOver
+	{
+		position: absolute;
+    max-width: 100%;
+    width: 50%;
+    height: 70%; 
+    top: 30%;      
+    left: -2%;
+    transform: translate( -50%, -50%);
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+  }
+  .imageTitle{
+    position: absolute;
+    left: -12%;
+    bottom: 15%;
+    /* font-family: ﻿ProximaNova-Light, ﻿Archivo-Regular, ﻿Tahoma, ﻿AdobeInvisFont; */
+/* font-size: 32pt; */
+
+  }
+  .trendTitle{
+    position: absolute;
+    bottom: 3em;
+    left:3em;
+  }
+.sideBrand{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.img360{
+  /* object-fit: cover; */
+  width: 100em;
+  height:100em;
+}
+
+/* .introSection{
+  width: 636px;
+}
+.glasses{
+  height: 48.5em;
+}
+*/
