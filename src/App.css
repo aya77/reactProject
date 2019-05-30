@@ -216,7 +216,7 @@ a {
 }
 .pre {
   display: block;
-  font-size: 110.5%;
+ 
   color: white;
 }
 .showMore {
@@ -261,7 +261,7 @@ a {
   background-image: url("./images/360img.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 15% 100%;
+  background-size: 12% 100% ;
 }
 
 .photo {
