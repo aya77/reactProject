@@ -17,7 +17,6 @@ class Intro extends Component {
       </div>
     );
 
-<<<<<<< HEAD
 
 
   
@@ -42,12 +41,6 @@ class Intro extends Component {
             
             <div className="container mt-5">
     
-=======
-    const intro = (
-      <div className="row">
-        <div className="col-12 ">
-          <div className="container mt-5">
->>>>>>> fc665a1bf5c370c07fb4207e245fa1a2e1fb1431
             <div className="intro-title ml-5">
               WELCOME TO
               <p className=" intro-title-color m-0 p-0">HAPPY VISION</p>
