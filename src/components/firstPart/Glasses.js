@@ -26,8 +26,8 @@ class Glasses extends Component {
   render() {
     return (
       <div className="row justify-content-center ">
-        <div className="row p-0 m-0 justify-content-center">
-          <div className="col-12 p-0">
+        <div className="row p-0 m-0 justify-content-center ml-2">
+          <div className="col-12 pl-5 mx-auto">
             <div className="">
               <img
                 className="detailedPhoto"
@@ -46,10 +46,10 @@ class Glasses extends Component {
           </div>
         </div>
 
-        <div className="row justify-content-center mt-5 p-0 ">
+        <div className="row justify-content-center align-items-center mt-5   pl-5">
           
           {this.state.pageOfItems.map(item => (
-            <div key={item.id} className="col-4 mx-4 p-0  ">
+            <div key={item.id} className="col-6  mx-auto">
               <div className="productContainer ">
                
               <img
