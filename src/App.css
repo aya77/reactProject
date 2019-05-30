@@ -319,17 +319,16 @@ a {
   bottom: 15%;
   font-size: 25pt;
 }
-.productTitle{
+/* .productTitle{
   position: absolute;
-  left: 2em;
   bottom: -.5em;
   font-size: 30pt;
-}
+} */
 
-.trendTitle {
+.trendTitle,.productTitle {
   position: absolute;
   bottom: -.5em;
-  left: 1.8em;
+  width: 100%;
   font-size: 15pt;
 }
 .sideBrand {
