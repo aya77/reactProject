@@ -26,29 +26,29 @@ class Glasses extends Component {
   render() {
     return (
       <div className=" ">
-        <div className="row d-flex p-0 m-0 justify-content-center">
-          <div className="col-12">
-            <div className="detailedPhoto">
+        <div className="row p-0 m-0 justify-content-center">
+          <div className="col-12 p-0">
+            <div className="">
               <img
-                className=""
+                className="detailedPhoto"
                 src={this.state.currentGlass.image}
                 alt="logo"
-                width="100%"
-                height="100%"
+                width="70%"
+                height="70%"
               />
             </div>
 
-            <div key={this.state.currentGlass.id}>
+            <div className="archivo" key={this.state.currentGlass.id}>
               {this.state.currentGlass.description}
               <br />
-              {this.state.currentGlass.price}
+             <span className="price"> {this.state.currentGlass.price}$</span>
             </div>
           </div>
         </div>
 
         <div className="row justify-content-center p-0 m-0">
           {this.state.pageOfItems.map(item => (
-            <div className="col-4 mx-3 p-0 mt-5 ">
+            <div key={item.id} className="col-4 mx-4 p-0 mt-5 ">
               <img
                 className="productImage"
                 onClick={() => this.setState({ currentGlass: item })}

@@ -62,18 +62,37 @@ a {
   background: #707070;
 }
 @font-face {
-  font-family: "archivo";
-  src: local("archivo"),
-    url("./fonts/archivo/Archivo-Regular.ttf") format("truetype");
-   
+  font-family: "archivoBoldItalic";
+  src: local("archivoBoldItalic"),
+    url("./fonts/archivo/Archivo-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "archivoBold";
+  src: local("archivoBold"),
+    url("./fonts/archivo/Archivo-Bold.ttf") format("truetype");
 }
 
-@font-face{
-  font-family:"Cairo-Regular" ;
-  src: local("Cairo Regular"),
-  url("./fonts/Cairo-Regular/Cairo-Regular.ttf") format("truetype");
+@font-face {
+  font-family: "Cairo-Regular";
+  src: local("Anton Regular"),
+    url("./fonts/Cairo-Regular/Cairo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "proximanova";
+  src: local("proximanova"),
+    url("./fonts/proximanova-light/proximanova-light.otf") format("truetype");
+}
+.archivo {
+  font-family: "archivoBoldItalic";
+}
+.proximanova {
+  font-family: "proximanova";
+}
 
-
+@font-face {
+	font-family: 'proximanovalight';
+	src: url('./fonts/proximanovalight/proximanovalight.eot');
+	src: local('proximanovalight'), url('./fonts/proximanovalight/proximanovalight.woff') format('woff'), url('./fonts/proximanovalight/proximanovalight.ttf') format('truetype');
 }
 
 
@@ -94,6 +113,7 @@ a {
 
 .intro-title {
   font-family: "archivo";
+  font-weight: bold;
   font-size: 40px;
   text-align: left;
 }
@@ -127,24 +147,24 @@ a {
 }
 .leftArrow {
   width: 100%;
-  height: 38px;
+  height: 100%;
   background-color: red;
   /* margin-left: -100%; */
 }
 
 .rightArrow {
   width: 100%;
-  height: 38px;
+  height: 100%;
   background-color: red;
 }
-.detailedPhoto{
+.detailedPhoto {
   width: 25em;
   height: 12.5em;
-  max-width:100%;
+  max-width: 100%;
   object-fit: cover;
-  overflow:hidden;
+  overflow: hidden;
 }
-.productImage{
+.productImage {
   /* width: 12.9375em; */
   width: 100%;
   height: 100%;
@@ -163,9 +183,11 @@ a {
 .pag {
   /* margin-left: -1.2%; */
   width: 100%;
-  margin-top: 44%;
+  margin-top: 34%;
 }
-.rightArrowPag, .cardText {
+.rightArrowPag,
+.cardText,
+.price {
   color: red;
 }
 .separatedBar {
@@ -182,9 +204,9 @@ a {
   text-decoration: underline;
   text-align: right;
 }
-.swipe{
-  overflow:auto;
-  white-space:nowrap;
+.swipe {
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .centered {
@@ -193,112 +215,108 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.cardTitle{
-  padding-top:60%;
+.cardTitle {
+  padding-top: 60%;
   font-family: "Cairo-Regular";
   font-size: 20pt;
   color: rgba(255, 255, 255, 255);
 }
 
-.navStyle{
+.navStyle {
   border-bottom: 3px solid red;
-  
 }
-.contactsIcon{
+.contactsIcon {
   color: white;
 }
-.contactsIconBG{
+.contactsIconBG {
   border: solid 3px red;
   border-radius: 50%;
   width: 20%;
   height: 25%;
   background-color: red;
-
 }
 
-.seperationBar{
+.seperationBar {
   height: 11em;
-  background-image: url("./images/360img.png") ;
-  background-repeat: no-repeat ;
-  background-position:right;
-  background-size: 15% 100% ;
+  background-image: url("./images/360img.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 15% 100%;
 }
 
-.photo{
+.photo {
   width: 25em;
   height: 55em;
-  
-  max-width:100%;
+
+  max-width: 100%;
   min-width: auto;
   object-fit: cover;
-
 }
-.productCard{
+.productCard {
   position: relative;
-  width: 100%;     
+  width: 100%;
   height: 18.75em;
   overflow: hidden;
-  /* object-fit: contain; */
+  object-fit: cover;
 }
 
-.productCardImage{
+.productCardImage {
   position: absolute;
   max-width: 100%;
   width: 100%;
-  height: auto; 
-  top: 50%;      
+  height: auto;
+  top: 50%;
   left: 50%;
-  transform: translate( -50%, -50%);
-  max-width:100%;
-  max-height:100%;
-  object-fit: contain ;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .text{
-  font-family: 'ProximaNova-Light' ,'Archivo-Regular', 'Tahoma', 'AdobeInvisFont'
+  font-family: "proximanovalight", "archivo";
+  /* font-size: 19pt; */
+  color: rgba(0, 0, 0, 255);
 }
 
-.meanImg
-	{
-		position: relative;
-		top: 0;
-		left: 0;
-	}
-	.imageOver
-	{
-		position: absolute;
-    max-width: 100%;
-    width: 50%;
-    height: 70%; 
-    top: 30%;      
-    left: -2%;
-    transform: translate( -50%, -50%);
-    max-width:100%;
-    max-height:100%;
-    object-fit: contain;
-  }
-  .imageTitle{
-    position: absolute;
-    left: -12%;
-    bottom: 15%;
-    /* font-family: ﻿ProximaNova-Light, ﻿Archivo-Regular, ﻿Tahoma, ﻿AdobeInvisFont; */
-/* font-size: 32pt; */
-
-  }
-  .trendTitle{
-    position: absolute;
-    bottom: 3em;
-    left:3em;
-  }
-.sideBrand{
+.meanImg {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.imageOver {
+  position: absolute;
+  max-width: 100%;
+  width: 50%;
+  height: 70%;
+  top: 30%;
+  left: -2%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.imageTitle {
+  position: absolute;
+  left: -12%;
+  bottom: 15%;
+  font-size: 25pt;
+}
+.trendTitle {
+  position: absolute;
+  bottom: 3em;
+  left: 3em;
+  font-size: 15pt;
+}
+.sideBrand {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-.img360{
+.img360 {
   /* object-fit: cover; */
   width: 100em;
-  height:100em;
+  height: 100em;
 }
 
 
@@ -317,3 +335,24 @@ a {
   height: 48.5em;
 }
 */
+
+.explore {
+  background-color: red;
+  width: 20%;
+  /* height: ; */
+  margin-top: 27%;
+  font-size: 18px;
+}
+.rotateText {
+  margin-left: 45%;
+  width: 0;
+  font-family: "archivo";
+  word-wrap: break-word;
+  color: white;
+}
+.types,
+.trends {
+  font-family: "archivoBold";
+  font-size: 20pt;
+  text-align: left;
+}

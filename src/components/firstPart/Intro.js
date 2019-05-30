@@ -7,9 +7,7 @@ class Intro extends Component {
     const vision = (
       <div className="row mt-1 mb-5  ">
         <div className=" col-6 mt-1 ml-5 pl-4 text-left">
-          <span className="black">Happy </span>
-          <span className="color">V</span>
-          <span className="black">ision</span>
+         <img src={happyVision}/>
         </div>
         <div className=" col-3 mt-3 ml-auto">
           <FontAwesomeIcon icon={faAlignJustify} />
@@ -17,30 +15,10 @@ class Intro extends Component {
       </div>
     );
 
-
-
-  
-    render() {
-
-        const vision = (
-            <div className="row mt-1 mb-5  ">
-              <div className=" col-6 mt-1 ml-5 pl-4 text-left">
-                 <img src={happyVision}/>
-              </div>
-              <div className=" col-3 mt-3 ml-auto">
-                <FontAwesomeIcon icon={faAlignJustify} />
-              </div>
-            </div>
-
-        )
-
-        const intro = (
-
-            <div className="row">
-            <div className="col-12 ">
-            
-            <div className="container mt-5">
-    
+    const intro = (
+      <div className="row">
+        <div className="col-12 ">
+          <div className="container mt-5">
             <div className="intro-title ml-5">
               WELCOME TO
               <p className=" intro-title-color m-0 p-0">HAPPY VISION</p>
