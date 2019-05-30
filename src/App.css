@@ -88,6 +88,29 @@ a {
 .proximanova {
   font-family: "proximanova";
 }
+
+@font-face {
+	font-family: 'proximanovalight';
+	src: url('./fonts/proximanovalight/proximanovalight.eot');
+	src: local('proximanovalight'), url('./fonts/proximanovalight/proximanovalight.woff') format('woff'), url('./fonts/proximanovalight/proximanovalight.ttf') format('truetype');
+}
+
+
+@font-face{
+  font-family:"Cairo-ExtraLight" ;
+  src: local("Cairo-ExtraLight"),
+  url("./fonts/Cairo-ExtraLight/Cairo-ExtraLight.ttf") format("truetype");
+
+
+}
+@font-face{
+  font-family:"Agan" ;
+  src: local("Agan"),
+  url("./fonts/Agan/Agane55sign.ttf") format("truetype");
+
+
+}
+
 .intro-title {
   font-family: "archivo";
   font-weight: bold;
@@ -124,14 +147,14 @@ a {
 }
 .leftArrow {
   width: 100%;
-  height: 38px;
+  height: 100%;
   background-color: red;
   /* margin-left: -100%; */
 }
 
 .rightArrow {
   width: 100%;
-  height: 38px;
+  height: 100%;
   background-color: red;
 }
 .detailedPhoto {
@@ -160,7 +183,7 @@ a {
 .pag {
   /* margin-left: -1.2%; */
   width: 100%;
-  margin-top: 44%;
+  margin-top: 34%;
 }
 .rightArrowPag,
 .cardText,
@@ -234,7 +257,7 @@ a {
   width: 100%;
   height: 18.75em;
   overflow: hidden;
-  /* object-fit: contain; */
+  object-fit: cover;
 }
 
 .productCardImage {
@@ -250,9 +273,10 @@ a {
   object-fit: contain;
 }
 
-.text {
-  font-family: "ProximaNova-Light", "Archivo-Regular", "Tahoma",
-    "AdobeInvisFont";
+.text{
+  font-family: "proximanovalight", "archivo";
+  /* font-size: 19pt; */
+  color: rgba(0, 0, 0, 255);
 }
 
 .meanImg {
@@ -300,6 +324,15 @@ a {
   /* object-fit: cover; */
   width: 100em;
   height: 100em;
+}
+
+
+.shoppingTitle{
+  font-family:'Cairo-ExtraLight';
+  font-size: 30pt;
+}
+.newExpText{
+  font-family:'Agan'
 }
 
 /* .introSection{

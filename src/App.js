@@ -26,21 +26,21 @@ class App extends Component {
     return (
       <div className="App container-fluid">
         <div className="row">
-          <div className="col-6 col-md-4">
+          <div className="col-6 col-lg-4 mr-lg-5">
             <Intro />
           </div>
-          <div className="col-6 col-md-4 p-0 m-0">
+          <div className="col-6 col-lg-auto p-0 m-0">
             <img
               className="photo"
               src="assets/images/forMen.png"
               alt=""
             />
           </div>
-          <div className=" col-6 col-md-4 order-last order-md-0">
+          <div className=" col-12 col-lg-4 order-last order-md-0">
             <div className="row">
               <NavBarComponent />
             </div>
-            <div className="row glasses">
+            <div className="row">
               <Glasses />
             </div>
           </div>
