@@ -25,7 +25,7 @@ class Glasses extends Component {
   }
   render() {
     return (
-      <div className=" ">
+      <div className="row justify-content-center ">
         <div className="row p-0 m-0 justify-content-center">
           <div className="col-12 p-0">
             <div className="">
@@ -46,19 +46,24 @@ class Glasses extends Component {
           </div>
         </div>
 
-        <div className="row justify-content-center p-0 m-0">
+        <div className="row justify-content-center mt-5 p-0 ">
+          
           {this.state.pageOfItems.map(item => (
-            <div key={item.id} className="col-4 mx-4 p-0 mt-5 ">
+            <div key={item.id} className="col-4 mx-4 p-0  ">
+              <div className="productContainer ">
+               
               <img
-                className="productImage"
+                className="glassImage"
                 onClick={() => this.setState({ currentGlass: item })}
                 src={item.image}
                 alt="logo"
               />
+               </div>
             </div>
           ))}
+          
         </div>
-        <div>
+        <div className="col-12">
           <Pagination
             items={this.state.exampleItems}
             onChangePage={this.onChangePage}
