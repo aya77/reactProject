@@ -30,7 +30,7 @@ export default class TypesComponent extends Component {
           <CardImg src={item.image2} className="embed-responsive-item imageOver" alt={item.type} />
           <CardBody>
             <CardImgOverlay className="d-flex flex-column justify-content-end">
-              <CardTitle className="imageTitle">{item.type}</CardTitle>
+              <CardTitle className="imageTitle proximanova">{item.type}</CardTitle>
             </CardImgOverlay>
           </CardBody>
         </Card>
@@ -40,7 +40,7 @@ export default class TypesComponent extends Component {
     return (
       <div className="container mt-5">
         <div className="row">
-          <div className="col-9 d-flex justify-content-left font-weight-bold">
+          <div className="col-9 d-flex justify-content-left types">
             WHAT ARE YOU LOOKING FOR?
           </div>
           <div className="col-3 mt-auto">

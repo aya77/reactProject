@@ -69,7 +69,7 @@ class App extends Component {
         </div>
         <div className="row justify-content-center align-items-center mt-5">
 
-          <strong className="col-12 mb-auto ">
+          <strong className="col-12 mb-auto proximanova">
             OUR HAPPY VISION BRANDS
           </strong>
         </div>

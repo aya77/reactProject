@@ -32,7 +32,7 @@ export default class TrendsComponent extends Component {
               <CardImg top className='productCardImage img-fluid' src={item.image} alt={item.title} />
             </CardBody>
             <CardBody>
-              <CardTitle className="trendTitle">{item.title}<br /><span className="cardText">{item.price}</span> </CardTitle>
+              <CardTitle className="trendTitle proximanova">{item.title}<br /><span className="cardText">{item.price}</span> </CardTitle>
               {/* <CardText className="cardText">{item.price} </CardText> */}
             </CardBody>
           </Card>
@@ -42,7 +42,7 @@ export default class TrendsComponent extends Component {
     return (
       <div className="container mt-3">
         <div className="row">
-          <div className="col-9 d-flex justify-content-left font-weight-bold">
+          <div className="col-9 d-flex justify-content-left font-weight-bold trends">
             CURRENTLY TRENDS
           </div>
           <div className="col-3 mt-auto">

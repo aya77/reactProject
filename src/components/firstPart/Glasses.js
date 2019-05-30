@@ -38,10 +38,10 @@ class Glasses extends Component {
               />
             </div>
 
-            <div key={this.state.currentGlass.id}>
+            <div className="archivo" key={this.state.currentGlass.id}>
               {this.state.currentGlass.description}
               <br />
-              {this.state.currentGlass.price}
+             <span className="price"> {this.state.currentGlass.price}$</span>
             </div>
           </div>
         </div>
