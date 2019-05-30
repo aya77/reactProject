@@ -34,8 +34,8 @@ class Products extends Component {
               <CardImg top className='productCardImage img-fluid' src={product.image} alt={product.title} />
             </CardBody>
             <CardBody>
-              <CardTitle>{product.title} </CardTitle>
-              <CardText className="cardText">{product.price} </CardText>
+              <CardTitle className="proximanova">{product.title} </CardTitle>
+              <CardText className="cardText proximanova">{product.price} </CardText>
             </CardBody>
           </Card>
         </div>
@@ -45,7 +45,7 @@ class Products extends Component {
       <div className="container mb-5">
         <div>
           <Navbar color="" light expand="md" className="mt-5">
-            <NavbarBrand href="/" className="font-weight-bold">
+            <NavbarBrand href="/" className="font-weight-bold achivo">
               HIGH MAINTENANCE MUST-HAVES
             </NavbarBrand>
             <Nav className=" ml-auto" navbar>
