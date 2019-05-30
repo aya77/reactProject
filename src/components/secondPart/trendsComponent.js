@@ -31,9 +31,8 @@ export default class TrendsComponent extends Component {
             <CardBody className=" productCard">
               <CardImg top className='productCardImage img-fluid' src={item.image} alt={item.title} />
             </CardBody>
-            <CardBody>
-              <CardTitle className="trendTitle proximanova">{item.title}<br /><span className="cardText">{item.price}</span> </CardTitle>
-              {/* <CardText className="cardText">{item.price} </CardText> */}
+            <CardBody className="trendTitle proximanova">
+              <CardTitle>{item.title}<br /><span className="cardText">{item.price}</span> </CardTitle>
             </CardBody>
           </Card>
       </div>

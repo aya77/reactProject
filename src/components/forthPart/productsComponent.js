@@ -33,9 +33,8 @@ class Products extends Component {
             <CardBody className=" productCard">
               <CardImg top className='productCardImage img-fluid' src={product.image} alt={product.title} />
             </CardBody>
-            <CardBody>
-              <CardTitle className="proximanova">{product.title} </CardTitle>
-              <CardText className="cardText proximanova">{product.price} </CardText>
+            <CardBody className=" productTitle">
+              <CardTitle className="proximanova ">{product.title}<br /><span className="cardText">{product.price}</span>  </CardTitle>
             </CardBody>
           </Card>
         </div>

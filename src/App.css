@@ -278,10 +278,17 @@ a {
   bottom: 15%;
   font-size: 25pt;
 }
+.productTitle{
+  position: absolute;
+  left: 2em;
+  bottom: 0;
+  font-size: 30pt;
+}
+
 .trendTitle {
   position: absolute;
-  bottom: 3em;
-  left: 3em;
+  bottom: 0em;
+  left: 1.8em;
   font-size: 15pt;
 }
 .sideBrand {
