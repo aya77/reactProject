@@ -29,7 +29,7 @@ class App extends Component {
           <div className="col-12 col-sm-6 col-lg-4 mr-lg-5">
             <Intro />
           </div>
-          <div className="col-12 col-sm-6 col-lg-3 p-0 m-0">
+          <div className="col-12 col-sm-6 col-lg-3 ml-lg-2 p-0 m-0">
             <img
               className="photo"
               src="assets/images/forMen.png"
@@ -44,6 +44,7 @@ class App extends Component {
               <Glasses />
             </div>
           </div>
+          
         </div>
 
 
