@@ -161,25 +161,30 @@ a {
   overflow: hidden;
 }
 
-.productContainer {
-  position: relative;
+.productContainer{
+
+  /* position: relative;
   width: 10em;
   height: 6em;
   /* overflow: hidden; */
-  object-fit: contain;
+  /* object-fit: contain;  */
+  max-width: 100%;
 }
 
 .glassImage {
-  /* position: absolute; */
-  /* max-width: 100%;
+  /* position: absolute;
+  max-width: 100%;
   width: 100%;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
+
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+  height: auto;
+  object-fit: contain;  
   max-width: 100%;
-  max-height: 100%;*/
-  object-fit: contain;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -195,6 +200,7 @@ a {
   /* margin-left: -1.2%; */
   width: 100%;
   margin-top: 34%;
+  margin-bottom:0;
 }
 .rightArrowPag,
 .cardText,
@@ -207,7 +213,7 @@ a {
 }
 .pre {
   display: block;
-  font-size: 110.5%;
+ 
   color: white;
 }
 .showMore {
@@ -252,12 +258,12 @@ a {
   background-image: url("./images/360img.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 15% 100%;
+  background-size: 12% 100% ;
 }
 
 .photo {
   width: 25em;
-  height: 55em;
+  height: 100%;
 
   max-width: 100%;
   min-width: auto;
@@ -396,4 +402,47 @@ a {
   font-family: "archivoBold";
   font-size: 20pt;
   text-align: left;
+}
+
+
+
+
+/*    
+@include media-breakpoint-up(lg) {
+  .rightArrow {
+    margin-left: 70px;
+  }
+} */
+  
+
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (min-width:  1150px)   {
+  .rightArrow {
+    margin-left:  83%;
+  }
+}
+
+@media screen and (min-width:  1100px) and (max-width: 1149.99px){
+  .rightArrow {
+    margin-left:  55%;
+  }
+}
+
+@media screen and (min-width: 1050 ) and (max-width:  1099.98px){
+  .rightArrow {
+    margin-left:  50%;
+  }
+}
+
+@media screen and (min-width:  995.98px)  and (max-width: 1049.99px) {
+  .rightArrow {
+    margin-left:  45%;
+  }
+}
+
+@media screen and (min-width:  993px) and (max-width: 995.97px){
+  .rightArrow {
+    margin-left:  35%;
+  }
 }
