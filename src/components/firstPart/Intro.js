@@ -24,7 +24,7 @@ class Intro extends Component {
               <p className=" intro-title-color m-0 p-0" >HAPPY VISION</p>
               THE EYE!
             </div>
-            <div className="intro-body mx-5 mt-5 text-left" style={{fontSize:1.2 + "vw"}}>
+            <div className="intro-body mx-5 mt-5 text-left" style={{fontSize:1.6 + "vw"}}>
               Happy Vision for Optical Frame, Sunglasses and Accessorize. Happy
               Vision concept is designed and identified by TECNITALIA S.P.A one
               of the leaders Italian company designs and manufacturing optical
