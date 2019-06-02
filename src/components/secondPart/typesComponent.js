@@ -24,12 +24,12 @@ export default class TypesComponent extends Component {
           <CardImg
             top
             src={item.image2}
-            className=" imageOver"
+            className="imageOver"
             alt={item.type}
           />
         </CardBody>
-        <Card top className=" text-left border-0">
-          <CardBody className=" productCard">
+        <Card top className="text-left border-0 cardType">
+          <CardBody className="productCard">
             <CardImg
               top
               src={item.image1}
