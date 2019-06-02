@@ -90,25 +90,21 @@ a {
 }
 
 @font-face {
-	font-family: 'proximanovalight';
-	src: url('./fonts/proximanovalight/proximanovalight.eot');
-	src: local('proximanovalight'), url('./fonts/proximanovalight/proximanovalight.woff') format('woff'), url('./fonts/proximanovalight/proximanovalight.ttf') format('truetype');
+  font-family: "proximanovalight";
+  src: url("./fonts/proximanovalight/proximanovalight.eot");
+  src: local("proximanovalight"),
+    url("./fonts/proximanovalight/proximanovalight.woff") format("woff"),
+    url("./fonts/proximanovalight/proximanovalight.ttf") format("truetype");
 }
 
-
-@font-face{
-  font-family:"Cairo-ExtraLight" ;
+@font-face {
+  font-family: "Cairo-ExtraLight";
   src: local("Cairo-ExtraLight"),
-  url("./fonts/Cairo-ExtraLight/Cairo-ExtraLight.ttf") format("truetype");
-
-
+    url("./fonts/Cairo-ExtraLight/Cairo-ExtraLight.ttf") format("truetype");
 }
-@font-face{
-  font-family:"Agan" ;
-  src: local("Agan"),
-  url("./fonts/Agan/Agane55sign.ttf") format("truetype");
-
-
+@font-face {
+  font-family: "Agan";
+  src: local("Agan"), url("./fonts/Agan/Agane55sign.ttf") format("truetype");
 }
 
 .intro-title {
@@ -165,8 +161,7 @@ a {
   overflow: hidden;
 }
 
-.productContainer{
-
+.productContainer {
   position: relative;
   width: 10em;
   height: 6em;
@@ -184,11 +179,10 @@ a {
   transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100%;*/
-  object-fit: contain; 
+  object-fit: contain;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-
 }
 .productImage,
 .showMoreText {
@@ -289,8 +283,20 @@ a {
   max-height: 100%;
   object-fit: cover;
 }
+.typeImage{
+  position: absolute;
+  max-width: 100%;
+  width: 90% ;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
 
-.text{
+.text {
   font-family: "proximanovalight", "archivo";
   /* font-size: 19pt; */
   color: rgba(0, 0, 0, 255);
@@ -304,10 +310,10 @@ a {
 .imageOver {
   position: absolute;
   max-width: 100%;
-  width: 50%;
-  height: 70%;
-  top: 30%;
-  left: -2%;
+  width: 100%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100%;
@@ -315,19 +321,32 @@ a {
 }
 .imageTitle {
   position: absolute;
-  left: -12%;
+  left: -15%;
   bottom: 15%;
   font-size: 25pt;
 }
-/* .productTitle{
-  position: absolute;
-  bottom: -.5em;
-  font-size: 30pt;
-} */
+.accessories{
+  position: relative;
+  top: 16em;
+  left: -10em;
+  z-index: 1;
+  width: 100%;
+  height: 18.75em;
+  overflow: hidden;
+  object-fit: cover;
+}
 
-.trendTitle,.productTitle {
+.typeDiv {
+  flex: row;
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.trendTitle,
+.productTitle {
   position: absolute;
-  bottom: -.5em;
+  bottom: -0.5em;
   width: 100%;
   font-size: 15pt;
 }
@@ -342,13 +361,12 @@ a {
   height: 100em;
 }
 
-
-.shoppingTitle{
-  font-family:'Cairo-ExtraLight';
+.shoppingTitle {
+  font-family: "Cairo-ExtraLight";
   font-size: 30pt;
 }
-.newExpText{
-  font-family:'Agan'
+.newExpText {
+  font-family: "Agan";
 }
 
 /* .introSection{

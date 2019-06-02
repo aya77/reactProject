@@ -10,7 +10,7 @@ import "../../App.css";
 class ContactsComponent extends Component {
   render() {
     const address = (
-      <div className="col-4 col-md-3 p-1 text">
+      <div className="col-4 col-md-3 p-1 text proximanova">
         <div className="row contactsIconBG m-1">
           <FontAwesomeIcon className="contactsIcon m-auto" icon={faMapSigns} />
         </div>
@@ -24,7 +24,7 @@ class ContactsComponent extends Component {
     );
 
     const contact = (
-      <div className="col-4 col-md-3 p-1 ">
+      <div className="col-4 col-md-3 p-1 proximanova">
         <div className="row contactsIconBG m-1">
           <FontAwesomeIcon className="contactsIcon m-auto" icon={faPhone} />
         </div>
@@ -38,7 +38,7 @@ class ContactsComponent extends Component {
     );
 
     const hours = (
-      <div className="col-4 col-md-3 p-1">
+      <div className="col-4 col-md-3 p-1 proximanova">
         <div className="row contactsIconBG m-1">
           <FontAwesomeIcon className="contactsIcon m-auto" icon={faClock} />
         </div>

@@ -230,7 +230,7 @@ export const TYPES = [
   {
     id: 2,
     type: "SUNGLASSES",
-    image1: "assets/images/Types/type1.png",
+    image1: "assets/images/Types/type2.png",
     image2: "assets/images/Types/type22.png"
   },
   {
@@ -242,7 +242,7 @@ export const TYPES = [
   {
     id: 4,
     type: "SUNGLASSES",
-    image1: "assets/images/Types/type1.png",
+    image1: "assets/images/Types/type2.png",
     image2: "assets/images/Types/type22.png"
   },
   {
@@ -254,7 +254,7 @@ export const TYPES = [
   {
     id: 6,
     type: "ACCESORIES",
-    image1: "assets/images/Types/type1.png",
+    image1: "assets/images/Types/type2.png",
     image2: "assets/images/Types/type33.png"
   }
 ];

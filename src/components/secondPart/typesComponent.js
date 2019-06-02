@@ -19,18 +19,30 @@ export default class TypesComponent extends Component {
 
   render() {
     const types = this.state.pageOfItems.map(item => (
-      <div key={item.id} className="col-12 col-md-4 mt-4 px-5">
-        <Card className="text-left border-0">
+      <div key={item.id} className="col-12 col-md-4 px-5 typeDiv">
+        <CardBody top className="accessories">
           <CardImg
-            src={item.image1}
-            className=" embed-responsive-item"
+            top
+            src={item.image2}
+            className=" imageOver"
             alt={item.type}
           />
-
-          <CardImg src={item.image2} className="embed-responsive-item imageOver" alt={item.type} />
+        </CardBody>
+        <Card top className=" text-left border-0">
+          <CardBody className=" productCard">
+            <CardImg
+              top
+              src={item.image1}
+              className="typeImage img-fluid"
+              alt={item.type}
+            />
+         
+          </CardBody>
           <CardBody>
             <CardImgOverlay className="d-flex flex-column justify-content-end">
-              <CardTitle className="imageTitle proximanova">{item.type}</CardTitle>
+              <CardTitle className="imageTitle proximanova">
+                {item.type}
+              </CardTitle>
             </CardImgOverlay>
           </CardBody>
         </Card>
