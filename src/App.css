@@ -434,7 +434,7 @@ a {
 
 @media screen and (min-width: 1050 ) and (max-width:  1099.98px){
   .rightArrow {
-    margin-left:  50%;
+    margin-left:  20em;
   }
 }
 
