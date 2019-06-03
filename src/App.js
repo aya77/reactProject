@@ -56,7 +56,7 @@ class App extends Component {
         <div className="row mt-5">
           <TypeComponent />
         </div>
-        <div className="row mt-5">
+        <div className="row ">
           <TrendsComponent />
         </div>
         <div className="row separatedBar ">
