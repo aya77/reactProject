@@ -333,7 +333,7 @@ a {
 }
 .imageTitle {
   position: absolute;
-  bottom: 8%;
+  bottom: 5%;
   left: 5%;
   transform: translate(-50%, -50%);
   font-size: 1.3em;
@@ -361,7 +361,7 @@ a {
 .typeCardBody {
   position: relative;
   width: 90%;
-  height: 25em;
+  height: 20em;
   overflow: hidden;
   object-fit: cover;
 }
