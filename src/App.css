@@ -361,7 +361,7 @@ a {
 .typeCardBody {
   position: relative;
   width: 90%;
-  height: 18em;
+  height: 20em;
   overflow: hidden;
   object-fit: cover;
 }
