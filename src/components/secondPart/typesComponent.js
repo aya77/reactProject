@@ -20,39 +20,38 @@ export default class TypesComponent extends Component {
   render() {
     const types = this.state.pageOfItems.map(item => (
       <div key={item.id} className="col-12 col-md-4 px-5 typeDiv">
-        <CardBody top className="accessories">
+        <Card top className="text-left border-0 cardType">
           <CardImg
             top
             src={item.image2}
             className="imageOver"
             alt={item.type}
           />
-        </CardBody>
-        <Card top className="text-left border-0 cardType">
-          <CardBody className="productCard">
+         
+          <CardBody className="typeCardBody">
             <CardImg
               top
               src={item.image1}
               className="typeImage img-fluid"
               alt={item.type}
             />
-         
+
           </CardBody>
-          <CardBody>
-            <CardImgOverlay className="d-flex flex-column justify-content-end">
-              <CardTitle className="imageTitle proximanova">
-                {item.type}
-              </CardTitle>
-            </CardImgOverlay>
-          </CardBody>
+
+          {/* <CardImgOverlay className=" justify-content-end"> */}
+          <CardTitle className="imageTitle proximanova">
+            {item.type}
+          </CardTitle>
+          {/* </CardImgOverlay> */}
+
         </Card>
       </div>
     ));
 
     return (
       <div className="container mt-5">
-        <div className="row">
-          <div className="col-9 d-flex justify-content-left types">
+        <div className="row  mb-5 ">
+          <div className="col-9 d-flex justify-content-left types ">
             WHAT ARE YOU LOOKING FOR?
           </div>
           <div className="col-3 mt-auto">
@@ -66,7 +65,7 @@ export default class TypesComponent extends Component {
             />
           </div>
         </div>
-        <div className="row">{types}</div>
+        <div className="row mt-5 pt-5">{types}</div>
       </div>
     );
   }

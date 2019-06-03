@@ -116,7 +116,7 @@ export default class Pagination extends React.Component {
     }
 
     return (
-      <div className={this.props.centerButton === 1 ? " pag " : "ml-5"}>
+      <div className={this.props.centerButton === 1 ? " pag " : ""}>
         <ul className="pagination mb-0">
           <li className={pager.currentPage === 1 ? "col-2  p-0 disabled" : "col-2 p-0"}>
             <a onClick={() => this.setPage(pager.currentPage - 1)}>
