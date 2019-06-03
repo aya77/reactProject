@@ -46,7 +46,7 @@ class Glasses extends Component {
           </div>
         </div>
 
-        <div className="row justify-content-center align-items-center mt-5   pl-5">
+        <div className="row justify-content-center align-items-center mt-3 pl-3">
           
           {this.state.pageOfItems.map(item => (
             <div key={item.id} className="col-6  mx-auto">

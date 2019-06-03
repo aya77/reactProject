@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -197,10 +198,8 @@ a {
   cursor: pointer;
 }
 .pag {
-  /* margin-left: -1.2%; */
   width: 100%;
   margin-top: 34%;
-  margin-bottom:0;
 }
 .rightArrowPag,
 .cardText,
@@ -401,10 +400,11 @@ a {
 
 .explore {
   background-color: red;
-  width: 20%;
+  width: 15%;
   /* height: ; */
-  margin-top: 27%;
-  font-size: 18px;
+  margin-top: 5%;
+  font-size: 15px;
+  
 }
 .rotateText {
   margin-left: 45%;
@@ -433,7 +433,7 @@ a {
 
 
 /* On screens that are 600px wide or less, the background color is olive */
-@media screen and (min-width:  1150px)   {
+ @media screen and (min-width:  1150px)   {
   .rightArrow {
     margin-left: 80%;
   }
@@ -456,9 +456,9 @@ a {
     margin-left:  45%;
   }
 }
-
+/*
 @media screen and (min-width:  993px) and (max-width: 995.97px){
   .rightArrow {
   
   }
-}
+} */
