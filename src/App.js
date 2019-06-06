@@ -26,25 +26,57 @@ class App extends Component {
     return (
       <div className="App container-fluid">
         <div className="row">
-          <div className="col-12 col-sm-6 col-lg-4 mr-lg-5">
+
+
+
+
+          <div className="col-12  col-lg-4 ">
+            {/* mr-lg-5 */}
+            {/* <div className="row">
+              <div className="col-12"> */}
             <Intro />
+            {/* </div>
+            </div> */}
+
           </div>
-          <div className="col-12 col-sm-6 col-lg-3 ml-lg-2 p-0 m-0">
-            <img
-              className="photo"
-              src="assets/images/forMen.png"
-              alt=""
-            />
-          </div>
-          <div className=" col-12 col-lg-4 order-last order-md-0 ">
-            <div className="row">
-              <NavBarComponent />
+
+
+
+          <div className="col-lg-8 col-sm-12">
+            <div className="row ">
+
+              <div className="col-12 col-lg-5 p-0 m-0 col-sm-6">
+                <div className="row col-12 p-0 m-0 bigPhoto">
+
+                  <div className="col-12 col-lg-10 offset-lg-2 p-0">
+                    {/* ml-lg-2  */}
+                    <img
+                      className="photo"
+                      src="assets/images/forMen.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div className="  col-lg-7 order-last order-md-0  col-sm-6">
+                <div className="row">
+                  <NavBarComponent />
+                </div>
+                <div className="row">
+                  <Glasses />
+                </div>
+              </div>
+
+
+
             </div>
-            <div className="row">
-              <Glasses />
-            </div>
           </div>
-          
+
+
         </div>
 
 
@@ -56,15 +88,15 @@ class App extends Component {
         <div className="row mt-5">
           <TypeComponent />
         </div>
-        <div className="row ">
+        <div className="row mt-0 pt-0">
           <TrendsComponent />
         </div>
-        <div className="row separatedBar ">
+        <div className="row separatedBar mt-5">
           <SeperationComponent />
         </div>
         <div className="m-0  ">
-        < SliderComponent items= {MALLS} height="400" padding="0"/>
-                </div>
+          < SliderComponent items={MALLS} height="400" padding="0" />
+        </div>
         <div className="row m-1 ">
           <Products />
         </div>
@@ -76,7 +108,7 @@ class App extends Component {
         </div>
 
         <div className="m-1 ">
-        < SliderComponent items= {BRANDS} height="110" padding="4" isBrands="1"/>
+          < SliderComponent items={BRANDS} height="110" padding="4" isBrands="1" />
         </div>
 
 

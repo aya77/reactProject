@@ -25,7 +25,7 @@ export default class TrendsComponent extends Component {
 
   render() {
     const products = this.state.pageOfItems.map(item => (
-      <div key={item.id} className="col-12 col-md-4 px-5">
+      <div key={item.id} className="col-12 col-lg-4 p-0">
       
           <Card className="text-center border-0">
             <CardBody className=" productCard">
@@ -39,7 +39,7 @@ export default class TrendsComponent extends Component {
     ));
 
     return (
-      <div className="container">
+      <div className="container mb-5 mt-0">
         <div className="row">
           <div className="col-9 d-flex justify-content-left font-weight-bold trends">
             CURRENTLY TRENDS

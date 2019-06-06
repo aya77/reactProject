@@ -11,7 +11,7 @@ class NavBarComponent extends Component {
         return (
             <div className="container">
 
-                <div className="row">
+                <div className="row col-12">
                     <Navbar className="row ml-auto" variant="light">
                         <Nav className="col-12 ">
                             <NavLink>

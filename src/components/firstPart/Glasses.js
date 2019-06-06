@@ -25,9 +25,9 @@ class Glasses extends Component {
   }
   render() {
     return (
-      <div className="row justify-content-center ">
-        <div className="row p-0 m-0 justify-content-center ml-2">
-          <div className="col-12 pl-5 mx-auto">
+      <div className=" container m-0 p-0">
+        <div className="row p-0 m-0 justify-content-center ">
+          <div className="col-12  mx-auto">
             <div className="">
               <img
                 className="detailedPhoto"
@@ -46,11 +46,11 @@ class Glasses extends Component {
           </div>
         </div>
 
-        <div className="row justify-content-center align-items-center mt-5   pl-5">
+        <div className="row col-12 justify-content-center align-items-center mt-5  p-0 m-0">
           
           {this.state.pageOfItems.map(item => (
-            <div key={item.id} className="col-6  mx-auto">
-              <div className="productContainer ">
+            <div key={item.id} className="glassContainer col-6  p-0 m-0">
+              {/* <div className="productContainer "> */}
                
               <img
                 className="glassImage"
@@ -58,12 +58,12 @@ class Glasses extends Component {
                 src={item.image}
                 alt="logo"
               />
-               </div>
+               {/* </div> */}
             </div>
           ))}
           
         </div>
-        <div className="col-12 ">
+        <div className="col-12 p-0">
           <Pagination
             items={this.state.exampleItems}
             onChangePage={this.onChangePage}

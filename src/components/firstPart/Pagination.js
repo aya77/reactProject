@@ -121,13 +121,13 @@ export default class Pagination extends React.Component {
           <li className={pager.currentPage === 1 ? "col-2  p-0 disabled" : "col-2 p-0"}>
             <a onClick={() => this.setPage(pager.currentPage - 1)}>
               <div className={this.props.centerButton === 1 ? "leftArrow" : ""}>
-                <FontAwesomeIcon className={this.props.centerButton === 1 ? "my-2" : "row my-2  rightArrowPag"} icon={this.props.leftIcon} />
+                <FontAwesomeIcon className={this.props.centerButton === 1 ? "my-4" : "row my-4  rightArrowPag"} icon={this.props.leftIcon} />
               </div>
             </a>
           </li>
           {this.props.centerButton === 1 ? (
             <li  className="addBtn col-8">
-              <FontAwesomeIcon className="mx-3" color="red" icon={faShoppingBag} />
+              <FontAwesomeIcon className="mx-3 my-2" color="red" icon={faShoppingBag} />
                 ADD To CHART
             </li>
           ) : (
@@ -143,7 +143,7 @@ export default class Pagination extends React.Component {
           >
             <a onClick={() => this.setPage(pager.currentPage + 1)}>
               <div className={this.props.centerButton === 1 ? "rightArrow" : ""}>
-                <FontAwesomeIcon className="my-2" icon={this.props.rightIcon} />
+                <FontAwesomeIcon className="my-4" icon={this.props.rightIcon} />
               </div>
             </a>
           </li>

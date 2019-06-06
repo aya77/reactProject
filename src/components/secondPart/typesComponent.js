@@ -19,7 +19,7 @@ export default class TypesComponent extends Component {
 
   render() {
     const types = this.state.pageOfItems.map(item => (
-      <div key={item.id} className="col-12 col-md-4 px-5 typeDiv">
+      <div key={item.id} className="col-12 col-md-4 pl-5  typeDiv">
         <Card top className="text-left border-0 cardType">
           <CardImg
             top
@@ -65,7 +65,7 @@ export default class TypesComponent extends Component {
             />
           </div>
         </div>
-        <div className="row mt-5 pt-5">{types}</div>
+        <div className="row  mt-5 pt-5">{types}</div>
       </div>
     );
   }
