@@ -19,16 +19,38 @@ export default class TypesComponent extends Component {
 
   render() {
     const types = this.state.pageOfItems.map(item => (
-      <div key={item.id} className="col-12 col-md-4 pl-5  typeDiv">
-        <Card top className="text-left border-0 cardType">
-          <CardImg
+      <div key={item.id} className="col-12 col-md-4 pl-2 ml-1 ml-lg-0">
+        <Card className="text-center border-0">
+          <CardBody className=" mb-3 typeCard">
+            <CardImg
+              top
+              className="typeImage img-fluid"
+              src={item.image1}
+              alt={item.title}
+            />
+          </CardBody>
+          <CardBody>
+            <CardImg
+              top
+              src={item.image2}
+              className="imageOver"
+              alt={item.type}
+            />
+          </CardBody>
+          <CardBody className="imageTitle proximanova">
+            <CardTitle>{item.type}</CardTitle>
+          </CardBody>
+        </Card>
+
+        {/* <Card top className="text-left border-0 cardType">
+          {/* <CardImg
             top
             src={item.image2}
             className="imageOver"
             alt={item.type}
-          />
-         
-          <CardBody className="typeCardBody">
+          /> */}
+
+        {/* <CardBody className="typeCardBody">
             <CardImg
               top
               src={item.image1}
@@ -36,21 +58,21 @@ export default class TypesComponent extends Component {
               alt={item.type}
             />
 
-          </CardBody>
+          </CardBody> */}
 
-          {/* <CardImgOverlay className=" justify-content-end"> */}
-          <CardTitle className="imageTitle proximanova">
+        {/* <CardImgOverlay className=" justify-content-end"> */}
+        {/* <CardTitle className="imageTitle proximanova">
             {item.type}
-          </CardTitle>
-          {/* </CardImgOverlay> */}
+          </CardTitle> */}
+        {/* </CardImgOverlay> */}
 
-        </Card>
+        {/* </Card> */}
       </div>
     ));
 
     return (
-      <div className="container mt-5">
-        <div className="row  mb-5 ">
+      <div className="container">
+        <div className="row  ">
           <div className="col-9 d-flex justify-content-left types ">
             WHAT ARE YOU LOOKING FOR?
           </div>
@@ -65,7 +87,7 @@ export default class TypesComponent extends Component {
             />
           </div>
         </div>
-        <div className="row  mt-5 pt-5">{types}</div>
+        <div className="row ml-2 mt-4 mb-5">{types}</div>
       </div>
     );
   }
