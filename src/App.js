@@ -48,7 +48,7 @@ class App extends Component {
               <div className="col-12 col-lg-5 p-0 m-0 col-sm-6">
                 <div className="row col-12 p-0 m-0 bigPhoto">
 
-                  <div className="col-12 col-lg-10 offset-lg-2 p-0">
+                  <div className="col-12 col-lg-10 offset-lg-2 p-lg-0 pl-4">
                     {/* ml-lg-2  */}
                     <img
                       className="photo"

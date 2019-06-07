@@ -5,7 +5,7 @@ import happyVision from "../../images/happyVision.png"
 class Intro extends Component {
   render() {
     const vision = (
-      <div className="row mt-1 mb-5  ">
+      <div className="row mt-1 mb-3  ">
         <div className=" col-6 mt-1 ml-3 pl-5 text-left">
           <img src={happyVision} />
         </div>
@@ -17,15 +17,15 @@ class Intro extends Component {
 
     const intro = (
       <>
-        <div className="row mb-0">
+        <div className="row mb-2">
           <div className="col-12 ">
             <div className=" mt-5">
-              <div className="intro-title ml-5" style={{ fontSize: 3 + "vw" }}>
+              <div className="intro-title ml-4 ml-lg-5" style={{ fontSize: 2 + "em" }}>
                 WELCOME TO
               <p className=" intro-title-color m-0 p-0" >HAPPY VISION</p>
                 THE EYE!
             </div>
-              <div className="row intro-body mx-5 mt-5 text-left pl-lg-0 pl-sm-5 pl-4" style={{ fontSize: 1.6 + "vw" }}>
+              <div className="row intro-body mx-5 mt-5 text-left pl-lg-0 pl-sm-3 pl-4" style={{ fontSize: 1.6 + "vw" }}>
                 Happy Vision for Optical Frame, Sunglasses and Accessorize. Happy
                 Vision concept is designed and identified by TECNITALIA S.P.A one
                 of the leaders Italian company designs and manufacturing optical
@@ -39,7 +39,7 @@ class Intro extends Component {
     );
 
     const explore = (
-      <div className="row explo ml-5 p-0" >
+      <div className="row explo ml-4 ml-lg-5 " >
         <div className="explore " style={{width: 5 + 'em'}}>
           <p className="rotateText">
             EXPLORE <FontAwesomeIcon icon={faArrowDown} color="black" />
@@ -50,7 +50,7 @@ class Intro extends Component {
 
     return (
       <>
-        <div className="intro container exploreContainer ">
+        <div className="intro exploreContainer ">
           {vision}
           {intro}
           {explore}
