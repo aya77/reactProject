@@ -25,12 +25,12 @@ class App extends Component {
   render() {
     return (
       <div className="App container-fluid">
-        <div className="row">
+        <div className="row mb-0">
 
 
 
 
-          <div className="col-12  col-lg-4 ">
+          <div className=" col-12  col-lg-4 mb-0"  style={{marginBottom:0 + "px", flexDirection: 'column',  display: 'flex'}}>
             {/* mr-lg-5 */}
             {/* <div className="row">
               <div className="col-12"> */}

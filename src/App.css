@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -209,10 +210,8 @@ a {
   cursor: pointer;
 }
 .pag {
-  /* margin-left: -1.2%; */
   width: 100%;
   margin-top: 34%;
-  margin-bottom:0;
 }
 .pagination{
   height: 4em;
@@ -417,13 +416,25 @@ a {
   height: 48.5em;
 }
 */
+.intro{
+  /* position: absolute; */
+  height: 100%;
+ 
+}
+.exploreContainer{
+  position: relative;
+}
+.explo{
+  position: absolute;
+  bottom: 0;
 
+  /* vertical-align: "bottom" */
+}
 .explore {
   background-color: red;
-  width: 20%;
-  /* height: ; */
-  margin-top: 27%;
-  font-size: 18px;
+  font-size: .8vw;
+ 
+  
 }
 .rotateText {
   margin-left: 45%;
@@ -451,33 +462,3 @@ a {
   
 
 
-/* On screens that are 600px wide or less, the background color is olive */
-/* @media screen and (min-width:  1150px)   {
-  .rightArrow {
-    margin-left: 80%;
-  }
-}
-
-@media screen and (min-width:  1100px) and (max-width: 1149.99px){
-  .rightArrow {
-    margin-left:  55%;
-  }
-}
-
-@media screen and (min-width: 1050 ) and (max-width:  1099.98px){
-  .rightArrow {
-    margin-left:  20em;
-  }
-}
-
-@media screen and (min-width:  995.98px)  and (max-width: 1049.99px) {
-  .rightArrow {
-    margin-left:  45%;
-  }
-}
-
-@media screen and (min-width:  993px) and (max-width: 995.97px){
-  .rightArrow {
-  
-  }
-} */
