@@ -42,31 +42,6 @@ export default class TypesComponent extends Component {
           </CardBody>
         </Card>
 
-        {/* <Card top className="text-left border-0 cardType">
-          {/* <CardImg
-            top
-            src={item.image2}
-            className="imageOver"
-            alt={item.type}
-          /> */}
-
-        {/* <CardBody className="typeCardBody">
-            <CardImg
-              top
-              src={item.image1}
-              className="typeImage img-fluid"
-              alt={item.type}
-            />
-
-          </CardBody> */}
-
-        {/* <CardImgOverlay className=" justify-content-end"> */}
-        {/* <CardTitle className="imageTitle proximanova">
-            {item.type}
-          </CardTitle> */}
-        {/* </CardImgOverlay> */}
-
-        {/* </Card> */}
       </div>
     ));
 
