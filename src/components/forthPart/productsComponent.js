@@ -28,10 +28,10 @@ class Products extends Component {
   render() {
     const glasses = this.state.currentOption.map(product => {
       return (
-        <div key={product.id} className="col-12 col-lg-4 mt-4 text-center p-0">
+        <div key={product.id} className="col-12 col-lg-4 col-md-6 mt-4 text-center p-0">
           <Card className="text-center border-0">
             <CardBody className=" productCard">
-              <div className="">
+              <div>
                 <CardImg top className=' productCardImage img-fluid' src={product.image} alt={product.title} />
               </div>
 

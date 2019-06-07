@@ -117,7 +117,8 @@ a {
 
 .intro-body {
   font-family: "archivo";
-  font-size: vw;
+  font-size: 1em;
+  padding-left: 7%
 }
 .black {
   font-family: "Anton";
