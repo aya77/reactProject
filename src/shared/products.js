@@ -382,6 +382,12 @@ export const GLASSESPRODUCT = [
     image: "assets/images/glasses/3.png",
     description: "Round Folding",
     price: 40.2
+  },
+  {
+    id: 12,
+    image: "assets/images/glasses/4.png",
+    description: "Round Folding",
+    price: 50
   }
 ];
 
