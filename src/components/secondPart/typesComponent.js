@@ -18,13 +18,17 @@ export default class TypesComponent extends Component {
   }
 
   render() {
-    const types = this.state.pageOfItems.map(item => (
+    const types = this.state.pageOfItems.map((item, index) => (
       <div key={item.id} className="col-12 col-md-4 pl-2 ml-1 ml-lg-0">
         <Card className="text-center border-0">
           <CardBody className=" mb-3 typeCard">
             <CardImg
               top
-              className="typeImage img-fluid"
+              className={
+                index % 2 === 0
+                  ? "opacity typeImage img-fluid"
+                  : "typeImage img-fluid"
+              }
               src={item.image1}
               alt={item.title}
             />
@@ -41,7 +45,6 @@ export default class TypesComponent extends Component {
             <CardTitle>{item.type}</CardTitle>
           </CardBody>
         </Card>
-
       </div>
     ));
 
@@ -62,7 +65,7 @@ export default class TypesComponent extends Component {
             />
           </div>
         </div>
-        <div className="row ml-2 mt-4 mb-5">{types}</div>
+        <div className="row ml-5 mt-4 mb-5">{types}</div>
       </div>
     );
   }
